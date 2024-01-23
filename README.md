@@ -32,3 +32,5 @@ API Reference
 [Widget](./reference/widget.md)
 
 [Data format](./)
+
+[Widget definition file](./)
