@@ -15,6 +15,19 @@ A typical widget needs below information
 At last you need to register your widget into dmeditor.
 
 ### 1. Definition file
+A definition define 'meta data' of a widget, and other information like settings, methods (eg, return data after user create a block from this widget). Below is the meta data information:
+```javascript
+{
+  // Name of the widget
+  name: 'Heading',
+
+  // Type of the widget, unique identifier for this widget.
+  // Only allow small case, -, numbers, starting from letter
+  type: 'heading', 
+  category: 'widget',
+  icon: 'TextFormatOutlined',
+}
+```
 
 
 ### 2. Entity
