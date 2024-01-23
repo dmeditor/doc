@@ -11,7 +11,7 @@ Definition file
 |  icon    |  `string`    |    `true`      |             |      |
 |  category    |  `string`    |   `true`       |             |      |
 |  settings    |  `Array<WidgetSetting>`    |   `true`       |             |      |
-|  events    |  [Object](#events)    |    `false`      |     Callback methods        |      |
+|  events    |  [object](#events)    |    `false`      |     Callback methods        |      |
 
 
 
