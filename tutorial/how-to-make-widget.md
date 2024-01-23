@@ -8,13 +8,13 @@ Conceptally a widget is a React component with customize settings. To simplify s
 ### Sample widget
 Click [this](./) to see our widget sample.
 
-### Introduction
+### Widget development overview
 
 A typical widget needs below information
 
-1. A definition file, which defines widget's name, type, icons, etc
-2. An entity, which define data model of this widget
-3. A main render which is a react component rendering the widget's data
+1. A definition file(definition.ts), which defines widget's name, type, icons, etc
+2. An entity(entity.ts), which define data model of this widget
+3. A main render(render.tsx) which is a react component rendering the widget's data
 4. Settings. Can be setting configuration and/or customized setting component.
 
 At last you need to register your widget into dmeditor.
