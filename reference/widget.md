@@ -22,7 +22,7 @@ Definition file
 |------|------|----------|-------------|------|
 |  name    |  `string`    |    `true`      |             |      |
 |  custom    |  `boolean`    |    `false`      |   If this setting is a custom setting. If yes, all the other properties' value will be ignored.          |  See [Create a custom setting](./)    |
-|  settingType    |  `string`    |    `true`      |             |    See [Widget setting types for setting types](./setting-type.md)  |
+|  settingType    |  `string`    |    `true`      |             |    See [Widget setting types for setting types](./setting-types.md)  |
 |  parameters    |  `string`    |    `false`      |   Parameters for this setting type. The specific property depends on setting type. <br><br> Eg. in `range` setting type, you can set `{min: 1, max: 10}` as parameter.         |  See [Widget setting types for parameters](./setting-type.md)    |
 
 
