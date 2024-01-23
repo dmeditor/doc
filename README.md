@@ -33,6 +33,6 @@ API Reference
 
 [Widget](./reference/widget.md)
 
-[Widget setting types](./reference/widget-setting-types.md)
+[Widget setting types](./reference/setting-types.md)
 
 [Widget definition file](./)
