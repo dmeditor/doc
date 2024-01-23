@@ -27,10 +27,12 @@ Develop widget, template, style
 API Reference
 --------
 
+[Data format](./)
+
 [Data API / State](./reference/state.md)
 
 [Widget](./reference/widget.md)
 
-[Data format](./)
+[Widget setting types](./reference/widget-setting-types.md)
 
 [Widget definition file](./)
