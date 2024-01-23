@@ -27,6 +27,8 @@ Develop widget, template, style
 API Reference
 --------
 
-[Data / State](./reference/state.md)
+[Data API / State](./reference/state.md)
 
 [Widget](./reference/widget.md)
+
+[Data format](./)
