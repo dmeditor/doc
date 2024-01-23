@@ -11,7 +11,7 @@ Use DM Editor
 
 [Server side rendering](./)
 
-Extend DM Editor in widget, template, style
+Develop widget, template, style
 -------
 [How to make a local widget](./tutorial/how-to-make-widget.md)
 
