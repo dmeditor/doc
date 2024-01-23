@@ -7,14 +7,14 @@ Definition file
 | Name | Type | Required | Description | Comment |
 |------|------|----------|-------------|------|
 |  type    |  `string`    |    `true`      |  widget type. Needs to be unique, and widget folder should have same name as type here.  eg.  `heading`        |   Only allow small case, -, numbers, starting from letter    |
-|  name    |  `string`    |    `true`      |   Widget name          |      |
+|  name    |  `string`    |    `true`      |   Widget name. eg. "Heading", "Image text"          |      |
 |  icon    |  `string`    |    `true`      |             |      |
 |  category    |  `string`    |   `true`       |             |      |
 |  settings    |  `Array<WidgetSetting>`    |   `true`       |             |      |
 
 
 
-WidgetSetting
+### WidgetSetting
 
 
 | Name | Type | Required | Description | Comment |
