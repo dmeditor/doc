@@ -10,14 +10,14 @@ Click [this](./) to see our widget sample.
 
 ### Widget development overview
 
-A typical widget needs below information
+A typical widget needs below information under widget folder(eg. `heading`):
 
 1. A definition file(`definition.ts`), which defines widget's name, type, icons, etc
 2. An entity(`entity.ts`), which define data model of this widget
 3. A main render(`render.tsx`) which is a react component rendering the widget's data
 4. Settings. Can be setting configuration and/or customized setting component.
 
-At last you need to register your widget into dmeditor.
+Then you need to register your widget into dmeditor.
 
 ### 1. Definition file
 A definition define 'meta data' of a widget, and other information like settings, methods (eg, return data after user create a block from this widget). Below is the meta data information:
