@@ -31,4 +31,4 @@ Definition file
 
 | Name | Type | Required | Description | Comment |
 |------|------|----------|-------------|------|
-|  createBlock    |  () => `object`    | true |  Invoked when creating this widget's block. Need to return a entity object(defined in `entity.ts`)      |             |
+|  createBlock    |  () => `object`    | true |  Invoked when creating this widget's block. Need to return an entity object(defined in `entity.ts`)      |             |
