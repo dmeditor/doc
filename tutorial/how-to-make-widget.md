@@ -3,7 +3,7 @@ How to make a widget
 
 A widget can be simple like a button, or complex like intractive form. 
 
-Basically a widget can be treated as a React component with customize settings. We provide some setting component(eg. color) so the developer only need some configuration and the setting will be there.
+Basically a widget can be treated as a React component with customize settings. For simple settings(eg. color, sliding, padding) we provide some setting component(eg. color) which can be configured and the setting will work, so the developer can focus on the widget rendering.
 
 A typical widget needs below information
 
