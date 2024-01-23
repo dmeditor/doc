@@ -9,7 +9,7 @@ Use DM Editor
 
 [How to use DM Editor](./)
 
-[Server side rendering](./)
+[SSR(Server side rendering)](./)
 
 Develop widget, template, style
 -------
