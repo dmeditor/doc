@@ -6,11 +6,12 @@ Definition file
 
 | Name | Type | Required | Description | Comment |
 |------|------|----------|-------------|------|
-|  type    |  `string`    |    `true`      |  widget type. Needs to be unique, and widget folder should have same name as type here.  eg.  `heading`        |   Only allow small case, -, numbers, starting from letter    |
-|  name    |  `string`    |    `true`      |   Widget name. eg. "Heading", "Image text"          |      |
+|  type    |  `string`    |    `true`      |  widget type. Needs to be unique, and widget folder should have same name as type here.  eg.  `'heading'`        |   Only allow small case, -, numbers, starting from letter    |
+|  name    |  `string`    |    `true`      |   Widget name. eg. `"Heading"`, `"Image text"`          |      |
 |  icon    |  `string`    |    `true`      |             |      |
 |  category    |  `string`    |   `true`       |             |      |
 |  settings    |  `Array<WidgetSetting>`    |   `true`       |             |      |
+|  events    |  [Object](./#events)    |    `false`      |     Callback methods        |      |
 
 
 
@@ -23,3 +24,11 @@ Definition file
 |  custom    |  `boolean`    |    `true`      |             |      |
 |  settingType    |  `string`    |    `true`      |             |      |
 |  parameters    |  `string`    |    `false`      |             |      |
+
+
+
+### Events
+
+| Name | Type | Required | Description | Comment |
+|------|------|----------|-------------|------|
+|  createBlock    |  () => `object`    | true |  Invoked when creating this widget's block. Need to return a entity object(defined in `entity.ts`)      |             |
