@@ -5,6 +5,11 @@ A widget can be simple like a button, or complex like intractive form.
 
 Basically a widget can be treated as a React component with customize settings. For simple settings(eg. color, sliding, padding) we provide some setting component(eg. color) which can be configured and the setting will work, so the developer can focus on the widget rendering.
 
+### Sample widget
+Click [this](./) to see our widget sample.
+
+### Introduction
+
 A typical widget needs below information
 
 1. A definition file, which defines widget's name, type, icons, etc
