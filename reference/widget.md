@@ -23,7 +23,7 @@ Definition file
 |  name    |  `string`    |    `true`      |             |      |
 |  custom    |  `boolean`    |    `false`      |   If this setting is a custom setting. If yes, all the other properties' value will be ignored.          |  See [Create a custom setting](./)    |
 |  settingType    |  `string`    |    `true`      |             |      |
-|  parameters    |  `string`    |    `false`      |             |      |
+|  parameters    |  `string`    |    `false`      |   Parameters for this setting type. The specific property depends on setting type. Eg. in `range` setting type, you can set `{min: 1, max: 10}` as parameter.         |      |
 
 
 
