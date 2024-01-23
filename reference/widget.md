@@ -4,7 +4,7 @@ Widget reference
 Definition file
 -------
 
-| Name | Type | Required | Description | Note |
+| Name | Type | Required | Description | Comment |
 |------|------|----------|-------------|------|
 |  type    |  `string`    |    `true`      |  widget type. Needs to be unique, and widget folder should have same name as type here.  eg.  `heading`        |   Only allow small case, -, numbers, starting from letter    |
 |  name    |  `string`    |    `true`      |   Widget name          |      |
@@ -17,7 +17,7 @@ Definition file
 WidgetSetting
 
 
-| Name | Type | Required | Description | Note |
+| Name | Type | Required | Description | Comment |
 |------|------|----------|-------------|------|
 |  name    |  `string`    |    `true`      |             |      |
 |  custom    |  `boolean`    |    `true`      |             |      |
