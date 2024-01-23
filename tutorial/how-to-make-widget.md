@@ -33,7 +33,7 @@ A definition define 'meta data' of a widget, and other information like settings
   icon: 'TextFormatOutlined',
 }
 ```
-See our [definition reference](./) for full properties and explaination.
+See our [definition reference](../reference/widget.md) for full properties and explaination.
 
 
 ### 2. Entity
