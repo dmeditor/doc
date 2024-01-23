@@ -21,7 +21,7 @@ Definition file
 | Name | Type | Required | Description | Comment |
 |------|------|----------|-------------|------|
 |  name    |  `string`    |    `true`      |             |      |
-|  custom    |  `boolean`    |    `false`      |   If this setting is a custom setting. If yes, all the other properties's value will be ignored.          |  See [Create a custom setting](./)    |
+|  custom    |  `boolean`    |    `false`      |   If this setting is a custom setting. If yes, all the other properties' value will be ignored.          |  See [Create a custom setting](./)    |
 |  settingType    |  `string`    |    `true`      |             |      |
 |  parameters    |  `string`    |    `false`      |             |      |
 
