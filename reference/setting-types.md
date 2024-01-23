@@ -1,4 +1,4 @@
-Widget setting types
+Widget setting components
 ---------
 | Identifier | Description | Parameters |
 |------------|-------------|------------|
