@@ -36,7 +36,7 @@ A definition define 'meta data' of a widget, and other information like settings
 
 
 ### 4. Setting
---------
 
-Register widget folder
-----
+
+### Register your widget
+
