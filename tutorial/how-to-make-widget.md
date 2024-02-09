@@ -105,13 +105,13 @@ const { updateSelectedBlock } = useEditorStore();
 ### 4. Register your widget
 ```javascript
 registerWidget(
-    {
-      type: 'sample',
-      name: 'Sample widget',
-      ...
-     },
-     SampleWidget
-    )
+{
+   type: 'sample',
+   name: 'Sample widget',
+   ...
+  },
+  SampleWidget
+)
 ```
 
 ### 5. Customized setting
