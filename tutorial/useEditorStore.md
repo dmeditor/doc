@@ -1,6 +1,6 @@
 ## Hook useEditorStore
 
-`useEditorStore` is a global state management hook where widget developer can use for getting/updating block data.
+`useEditorStore` is a global state management hook where widget developer can get/add/update/delete block data.
 
 ### selected block information
 
