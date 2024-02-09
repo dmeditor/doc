@@ -69,6 +69,8 @@ export interface EntitySampleWidget{
 
 #### Render 
 Below is a render component sample to render:
+
+Note `EntitySampleWidget` is the Entity definition.
 ```javascript
 export const SampleWidget = (props: DME.WidgetRenderProps<EntitySampleWidget>) => {
 const {
