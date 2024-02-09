@@ -57,3 +57,14 @@ Widget Render
 Setting Component
 --------
 ### SettingComponentProps
+
+
+| Name | Type | Required | Description | Comment |
+|------|------|----------|-------------|------|
+|  property    |  `string`    |    `true`      |             |      |
+|  name    |  `string`    |    `true`      |             |      |
+|  custom    |  `boolean`    |    `false`      |             |      |
+|  settingComponent    |  `string`    |    `true`      |             |      |
+|  category    |  `string`    |    `false`      |             |      |
+|  parameters    |  `{[key: string]: unknown;}`    |    `false`      |             |      |
+
