@@ -139,4 +139,5 @@ registerWidget(
       ...
      },
      SampleWidget
+    )
 ```
