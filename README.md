@@ -27,9 +27,9 @@ How to make a style
 API Reference
 --------
 
-[Hooks](./tutorial/useEditorStore.md)
+[Hook useEditorStore](./tutorial/useEditorStore.md)
 
-[Widget](./reference/widget.md)
+[Widget properties](./reference/widget.md)
 
 [Widget setting componenets](./reference/setting-components.md)
 
