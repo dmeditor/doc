@@ -58,7 +58,7 @@ Setting Component
 --------
 ### SettingComponentProps
 
-SettingComponentProps is WidgetSetting & value
+`SettingComponentProps` is [`WidgetSetting`](#widgetSetting) & `value`
 
 | Name | Type | Required | Description | Comment |
 |------|------|----------|-------------|------|
