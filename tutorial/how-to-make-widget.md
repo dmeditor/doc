@@ -139,7 +139,7 @@ const SettingInput = (props: DME.SettingComponentProps) => {
 };
 ```
 
-Registration:
+Registration the setting component:
 ```javascript
   registerSettingComponent('setting_input', SettingInput);
 ```
