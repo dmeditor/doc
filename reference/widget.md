@@ -62,5 +62,5 @@ Setting Component
 
 | Name | Type | Required | Description | Comment |
 |------|------|----------|-------------|------|
-|  value    |  `unknown`    |    `false`      |     Value of the setting. The value of 'property'     |      |
+|  value    |  `unknown`    |    `false`      |     Value of the setting. The value of 'property'. `Undefined` when `custom` is true.     |      |
 
