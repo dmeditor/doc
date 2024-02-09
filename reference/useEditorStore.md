@@ -1,6 +1,22 @@
 ## Hook useEditorStore
 
-### getSelectedBlock
+### Selected block
+
+### Load data
+
+### Data manipulation
+#### getSelectedBlock
 
 
-### updateSelectedBlock
+#### updateSelectedBlock
+
+#### updateSelectedBlockValue
+
+#### updateSelectedBlockData
+
+
+
+
+### Add block
+
+### addBlockData
