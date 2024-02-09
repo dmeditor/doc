@@ -31,5 +31,5 @@ API Reference
 
 [Widget properties](./reference/widget.md)
 
-[Widget setting componenets](./reference/setting-components.md)
+[Widget setting components](./reference/setting-components.md)
 
