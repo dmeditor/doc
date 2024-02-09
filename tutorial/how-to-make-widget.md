@@ -49,7 +49,7 @@ A definition define 'meta data' of a widget, and other information like settings
       ],
 }
 ```
-Note:  `setting_input` is a customized setting component, see Customized setting for implementation.
+Note:  `setting_input` is a customized setting component, see [Customized setting](#4-customized-setting) for implementation.
 
 See our [definition reference](../reference/widget.md) for full properties and explaination.
 
