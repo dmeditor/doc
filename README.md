@@ -7,7 +7,7 @@ Use DM Editor
 -------
 Install DM Editor
 
-How to use DM Editor]
+How to use DM Editor
 
 SSR(Server side rendering)
 
