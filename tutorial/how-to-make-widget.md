@@ -12,7 +12,7 @@ Click [this](https://github.com/dmeditor/dmeditor/tree/main/samples/dev/SampleWi
 
 A typical widget(eg. `heading`) needs below information:
 
-1. [A definition object](#1-definition), which defines widget's name, type, settings, etc
+1. [A definition object](#1-widget-definition), which defines widget's name, type, settings, etc
 2. [An entity(optional)](#2-entity), which defines data model of this widget. If not defined, the default data model will be used.
 3. [A render component](#3-render-component) which is a react component rendering the widget's data
 
@@ -21,7 +21,7 @@ You will need to [register](#4-register-your-widget) 1. and 3. using `registerWi
 In addition, you may need to create your [customized setting component](#5-customized-setting) if our built-in setting components don't fit your need.
 
 
-### 1. Definition
+### 1. Widget definition
 A definition defines 'meta data' of a widget, and other information like settings, methods (eg, return data after user create a block from this widget). Below is the meta data information:
 ```javascript
 {
