@@ -131,4 +131,12 @@ Registration:
   registerSettingComponent('setting_input', SettingInput);
 ```
 ### Register your widget
-
+```javascript
+registerWidget(
+    {
+      type: 'sample',
+      name: 'Sample widget',
+      ...
+     },
+     SampleWidget
+```
