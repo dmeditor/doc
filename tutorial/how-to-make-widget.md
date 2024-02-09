@@ -12,9 +12,9 @@ Click [this](./) to see our widget sample.
 
 A typical widget(eg. `heading`) needs below information:
 
-1. A definition object, which defines widget's name, type, settings, etc
-2. An entity(optional), which defines data model of this widget. If not defined, the default data model will be used.
-3. A render component which is a react component rendering the widget's data
+1. [A definition object](#1-definition), which defines widget's name, type, settings, etc
+2. [An entity(optional)](#2-entity), which defines data model of this widget. If not defined, the default data model will be used.
+3. [A render component](#3-render-component) which is a react component rendering the widget's data
 
 You will need to register 1. and 3. using `registerWidget` function.
 
@@ -54,7 +54,18 @@ Note:  `setting_input` is a customized setting component, see [Customized settin
 See our [definition reference](../reference/widget.md) for full properties and explaination.
 
 
-### 2. Render component
+### 2. Entity
+An entity defines data model. It's recommanded to define a model so the widget data manipulation is easier. The saved json will be same as entity definition.
+```javascript
+export interface EntitySampleWidget{
+    settings: {
+      width: number;
+      backgroundColor?: string;
+    };
+  }
+```
+
+### 3. Render component
 
 #### Render 
 Below is a render component sample to render:
@@ -92,15 +103,6 @@ const { updateSelectedBlock } = useEditorStore();
 ```
 
 
-### 3. Entity
-```javascript
-export interface EntitySampleWidget{
-    settings: {
-      width: number;
-      backgroundColor?: string;
-    };
-  }
-```
 ### 4. Customized setting
 Implementation:
 ```javascript
