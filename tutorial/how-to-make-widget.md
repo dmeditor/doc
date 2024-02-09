@@ -16,9 +16,9 @@ A typical widget(eg. `heading`) needs below information:
 2. [An entity(optional)](#2-entity), which defines data model of this widget. If not defined, the default data model will be used.
 3. [A render component](#3-render-component) which is a react component rendering the widget's data
 
-You will need to register 1. and 3. using `registerWidget` function.
+You will need to [register](#4-register-your-widget) 1. and 3. using `registerWidget` function.
 
-In addition, you may need to create your customized setting component if our built-in setting components don't fit your need.
+In addition, you may need to create your [customized setting component](#5-customized-setting) if our built-in setting components don't fit your need.
 
 
 ### 1. Definition
@@ -102,8 +102,19 @@ const { updateSelectedBlock } = useEditorStore();
   };
 ```
 
+### 4. Register your widget
+```javascript
+registerWidget(
+    {
+      type: 'sample',
+      name: 'Sample widget',
+      ...
+     },
+     SampleWidget
+    )
+```
 
-### 4. Customized setting
+### 5. Customized setting
 Implementation:
 ```javascript
 const SettingInput = (props: DME.SettingComponentProps) => {
@@ -131,15 +142,4 @@ const SettingInput = (props: DME.SettingComponentProps) => {
 Registration:
 ```javascript
   registerSettingComponent('setting_input', SettingInput);
-```
-### Register your widget
-```javascript
-registerWidget(
-    {
-      type: 'sample',
-      name: 'Sample widget',
-      ...
-     },
-     SampleWidget
-    )
 ```
