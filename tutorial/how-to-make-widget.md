@@ -22,7 +22,7 @@ In addition, you may need to create your [customized setting component](#5-custo
 
 
 ### 1. Definition
-A definition define 'meta data' of a widget, and other information like settings, methods (eg, return data after user create a block from this widget). Below is the meta data information:
+A definition defines 'meta data' of a widget, and other information like settings, methods (eg, return data after user create a block from this widget). Below is the meta data information:
 ```javascript
 {
   // Name of the widget
