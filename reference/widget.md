@@ -61,7 +61,7 @@ Setting Component
 
 | Name | Type | Required | Description | Comment |
 |------|------|----------|-------------|------|
-|  property    |  `string`    |    `true`      |             |      |
+|  property    |  `string`    |    `true`      |    Property identifier. eg.  `level`. Note: it support `.` for mulit-level object access(max 2 levels, meaning one `.`). eg. `settings.value` means `value` property under `settings`       |      |
 |  name    |  `string`    |    `true`      |             |      |
 |  custom    |  `boolean`    |    `false`      |             |      |
 |  settingComponent    |  `string`    |    `true`      |             |      |
