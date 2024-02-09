@@ -49,7 +49,7 @@ Widget Render
 |------|------|----------|-------------|------|
 |  id    |  `string`    |    `false`      |             |      |
 |  type    |  `boolean`    |    `true`      |             |      |
-|  data    |  `DMEData.DefaultDataType` | customized entity    |    `true`      |             |      |
+|  data    |  `DMEData.DefaultDataType` \| customized entity    |    `true`      |             |      |
 |  children    |  `Array<DMEData.Block>`    |    `false`      |             |      |
 
 
