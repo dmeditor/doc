@@ -67,5 +67,5 @@ Setting Component
 |  settingComponent    |  `string`    |    `true`      |     Registered setting component identifier, eg.'color'        |      |
 |  category    |  `string`    |    `false`      |   Category of this setting.  Support `setting`(if not set)|`style` for now.      |      |
 |  value    |  `unknown`    |    `false`      |     Value of the setting. The value of 'property'     |      |
-|  parameters    |  `{[key: string]: unknown;}`    |    `false`      |     Parameters to the setting component. Eg. `Range` can be used for setting with different 'min' &   `max` parameter.     |      |
+|  parameters    |  `{[key: string]: unknown;}`    |    `false`      |     Parameters to the setting component. <br />Eg. `Range` can be used for setting with different 'min' &   `max` parameter.     |      |
 
