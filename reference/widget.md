@@ -1,7 +1,7 @@
 Widget reference
 ==========
 
-Definition file
+Definition
 -------
 
 | Name | Type | Required | Description | Comment |
@@ -33,3 +33,27 @@ Definition file
 | Name | Type | Required | Description | Comment |
 |------|------|----------|-------------|------|
 |  createBlock    |  () => `object`    | true |  Invoked when creating this widget's block. Need to return an entity object(defined in `entity.ts`)      |             |
+
+Widget Render
+-----
+### WidgetRenderProps
+
+| Name | Type | Required | Description | Comment |
+|------|------|----------|-------------|------|
+|  blockNode    |  `DMEData.Block<Type>`    |    `true`      |             |      |
+|  active    |  `boolean`    |    `true`      |             |      |
+
+
+### DMEData.Block\<Type\>
+| Name | Type | Required | Description | Comment |
+|------|------|----------|-------------|------|
+|  id    |  `string`    |    `false`      |             |      |
+|  type    |  `boolean`    |    `true`      |             |      |
+|  data    |  `DMEData.DefaultDataType` | customized entity    |    `true`      |             |      |
+|  children    |  `Array<DMEData.Block>`    |    `false`      |             |      |
+
+
+
+Setting Component
+--------
+### SettingComponentProps
