@@ -58,14 +58,9 @@ Setting Component
 --------
 ### SettingComponentProps
 
+SettingComponentProps is WidgetSetting & value
 
 | Name | Type | Required | Description | Comment |
 |------|------|----------|-------------|------|
-|  property    |  `string`    |    `true`      |    Property identifier. eg.  `level`. <br /> Note: it supports `.` for mulit-level object access(max 2 levels, meaning one `.`). eg. `settings.value` means `value` property under `settings`       |      |
-|  name    |  `string`    |    `true`      |    Label of the setting.         |      |
-|  custom    |  `boolean`    |    `false`      |       Is custom component or not. If `true`, `name`, `property`, `value` will be ignored.      |      |
-|  settingComponent    |  `string`    |    `true`      |     Registered setting component identifier, eg.'color'        |      |
-|  category    |  `string`    |    `false`      |   Category of this setting.  Support `setting`(if not set)|`style` for now.      |      |
 |  value    |  `unknown`    |    `false`      |     Value of the setting. The value of 'property'     |      |
-|  parameters    |  `{[key: string]: unknown;}`    |    `false`      |     Parameters to the setting component. <br />Eg. `Range` can be used for setting with different 'min' &   `max` parameter.     |      |
 
