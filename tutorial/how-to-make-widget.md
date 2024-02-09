@@ -21,7 +21,7 @@ You will need to register 1. and 3. using `registerWidget` function.
 In addition, you may need to create your customized setting component if our built-in setting components don't fit your need.
 
 
-### 1. Definition file
+### 1. Definition
 A definition define 'meta data' of a widget, and other information like settings, methods (eg, return data after user create a block from this widget). Below is the meta data information:
 ```javascript
 {
@@ -33,18 +33,102 @@ A definition define 'meta data' of a widget, and other information like settings
   type: 'heading', 
   category: 'widget',
   icon: 'TextFormatOutlined',
+  settings: [
+        {
+          name: 'Background Color',
+          settingComponent: 'color',
+          category: 'settings',
+          property: 'settings.backgroundColor',
+        },
+        {
+          name: 'Width',
+          settingComponent: 'setting_input',
+          category: 'settings',
+          property: 'settings.width',
+        },
+      ],
 }
 ```
+Note:  `setting_input` is a customized setting component, see Customized setting for implementation.
+
 See our [definition reference](../reference/widget.md) for full properties and explaination.
 
 
-### 2. Entity
+### 2. Render component
 
-### 3. Render
+#### Render 
+Below is a render component sample to render:
+```javascript
+export const SampleWidget = (props: DME.WidgetRenderProps<EntitySampleWidget>) => {
+const {
+    blockNode: {
+      data: { settings },
+    },
+  } = props;
+...
+return (
+    <div>    
+      <div
+        style={{ width: width }}
+        className={css`
+          height: 300px;
+          background: ${settings.backgroundColor ?? '#ffe3e3'};
+        `}
+      >
+      </div>
+    </div>
+}
+```
+
+#### Change data
+```javascript
+const { updateSelectedBlock } = useEditorStore();
+  const updateWidth = (e, v) => {
+    //update data with entity
+    updateSelectedBlock<EntitySampleWidget>((data) => {
+      data.settings.width = v as number;
+    });
+  };
+```
 
 
-### 4. Setting
+### 3. Entity
+```javascript
+export interface EntitySampleWidget{
+    settings: {
+      width: number;
+      backgroundColor?: string;
+    };
+  }
+```
+### 4. Customized setting
+Implementation:
+```javascript
+const SettingInput = (props: DME.SettingComponentProps) => {
+  const { property, value } = props;
+  const { getSelectedBlock, updateSelectedBlockProps } = useEditorStore();
 
+  //Get block data
+  const blockData = getSelectedBlock<EntitySampleWidget>();
 
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    //update data with dynamic property
+    updateSelectedBlockProps(property, e.target.value);
+  };
+
+  return (
+    <div>
+      <TextField onChange={handleChange} value={value} />
+      {/* Show background color instead */}
+      Color: {blockData?.data.settings.backgroundColor}
+    </div>
+  );
+};
+```
+
+Registration:
+```javascript
+  registerSettingComponent('setting_input', SettingInput);
+```
 ### Register your widget
 
