@@ -15,6 +15,10 @@ Develop widget, template, style
 -------
 [How to make a local widget](./tutorial/how-to-make-widget.md)
 
+How to make widget variant
+
+How to make widget style
+
 Develop remote widget
 
 Publish your widget to our store
