@@ -16,14 +16,14 @@ cssStyle: {
 }
 ```
 
-Common key: root - the root element of a widget
+Common key: `root` - the root element of a widget
 
 | Widget | Dey | Description |
 |--------|-----|-------------|
 |   Heading |    |             |
-|   Table   |  tr   |     Table row        |
-|        |    td |       Table cell      |
-|        |   th  |   Table head          |
+|   Table   |  `tr`   |     Table row        |
+|        |    `td` |       Table cell      |
+|        |   `th`  |   Table head          |
 |   Tabs     |     |             |
 |   Accordion     |     |             |
 |        |     |             |
