@@ -17,7 +17,7 @@ Develop widget, template, style
 
 [How to make widget variant](#)
 
-[How to make widget style](#)
+[How to make widget style](./tutorial/how-to-make-a-widget-style.md)
 
 Develop remote widget
 
