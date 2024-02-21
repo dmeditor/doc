@@ -3,8 +3,12 @@ Widget style keys
 
 
 Common key: root
-| Widget | key | description |
+| Widget | Dey | Description |
 |--------|-----|-------------|
 |   heading |    |             |
-|   table   |  tr, td   |             |
+|   table   |  tr   |     Table row        |
+|        |    td |       Table cell      |
+|        |   th  |   Table head          |
+|        |     |             |
+|        |     |             |
 |        |     |             |
