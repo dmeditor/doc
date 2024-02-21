@@ -38,9 +38,10 @@ When storing data, it be like:
 When setting allowed child types
 
 ```javascript
-{allowed_types:['heading:article_title', ...]
+{allowed_types:['heading:article_title', ...]}
 ```
 
+### Balance between widget variant or new widget
 
 
 
