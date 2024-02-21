@@ -1,7 +1,7 @@
 Widget style keys
 ----------
 
-A style key is defined by structual widgets used in widget styles. Eg. in table there is tr for row, so developer can use 
+A style key is defined by structual widgets used in widget styles. Eg. in table there is key `tr` for row, so developer can use 
 ```javascript
 {
 cssClasses: {tr: 'bg-gray-100'}
