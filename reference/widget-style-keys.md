@@ -1,7 +1,20 @@
 Widget style keys
 ----------
 
-Style key is defined by structual widgets used in widget styles.
+A style key is defined by structual widgets used in widget styles. Eg. in table there is tr for row, so developer can use 
+```javascript
+{
+cssClasses: {tr: 'bg-gray-100'}
+}
+
+//
+{
+cssStyle: {
+.dme-w-tr{
+  height: 15px;
+}
+}
+```
 
 Common key: root - the root element of a widget
 
