@@ -26,4 +26,7 @@ registerWidgetVariant({
 
 ```
 
+### Use variant as widget in data
+Widget variant is stored as \<widget identifier\>:\<variant identifer\>, eg. `{type:'heading:article_title', ...}`
+
 
