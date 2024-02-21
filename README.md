@@ -37,3 +37,5 @@ API Reference
 
 [Widget setting components](./reference/setting-components.md)
 
+[Widget style keys](./reference/widget-style-keys.md)
+
