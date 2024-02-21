@@ -5,15 +5,17 @@ A style key is defined by structual widgets used in widget styles. Eg. in table 
 ```javascript
 //css classes
 {
-cssClasses: {tr: 'bg-gray-100'}
+ cssClasses:{
+    tr: 'bg-gray-100'
+  }
 }
 
 //inline css style
 {
-cssStyle: {
+cssStyle: `
 .dme-w-tr{
   height: 15px;
-}
+`
 }
 ```
 
