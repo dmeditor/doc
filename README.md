@@ -23,11 +23,6 @@ Develop remote widget
 
 Publish your widget to our store
 
-How to make a template
-
-How to make a style
-
-
 API Reference
 --------
 
