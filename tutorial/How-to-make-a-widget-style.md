@@ -7,6 +7,31 @@ For example for button, there are styles like button type(primary, cancel), butt
 There are 2 ways to develop a style: css class and inline-css. Css classes way is quite handy if you use utility based css style eg. Tailwind. Note inline-css uses css-in-js way so nested css are support see [Sample in emotion](https://emotion.sh/docs/nested).
 
 
+Below is an example of inline css:
+
+```javascript
+//css style
+...
+{
+  identifier:'big-margin',
+  name:'Big',
+  cssStyle: `
+     margin-top: 50px;
+     margin-bottom: 50px;
+  `,
+  icon: ''  
+}
+      `
+//css class
+{
+    identifier: 'primary',
+    name: 'Primary',
+    cssClasses: { root: 'bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded' },
+    cssStyle: '',
+  }
+
+```
+
 ### 1. How to register a style
 
 Using below code to register style
