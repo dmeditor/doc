@@ -1,8 +1,8 @@
 Widget style keys
 ----------
 
+Common key: root - the root element of a widget
 
-Common key: root
 | Widget | Dey | Description |
 |--------|-----|-------------|
 |   heading |    |             |
