@@ -35,7 +35,7 @@ When storing data, it be like:
 
 When setting allowed child types
 
-`{allow_types:['heading:article_title', ...]`
+`{allowed_types:['heading:article_title', ...]`
 
 
 
