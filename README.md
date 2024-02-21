@@ -15,7 +15,7 @@ Develop widget, template, style
 -------
 [How to make a local widget](./tutorial/how-to-make-widget.md)
 
-[How to make widget variant](#)
+[How to make widget variant](./tutorial/how-to-make-a-widget-variant.md)
 
 [How to make widget style](./tutorial/How-to-make-a-widget-style.md)
 
