@@ -27,8 +27,8 @@ Common key: `root` - the root element of a widget
 |   Table   |  `tr`   |     Table row        |
 |        |    `td` |       Table cell      |
 |        |   `th`  |   Table head          |
-|   Hero text(Image/video text)     | hero    |             |
-|                                   | list    |             |
+|   Hero text(Image/video text)     | `hero`    |             |
+|                                   | `list`    |             |
 |   Tabs     |     |             |
 |   Accordion     |     |             |
 |        |     |             |
