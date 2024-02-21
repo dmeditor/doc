@@ -6,7 +6,7 @@ For example for button, there are styles like button type(primary, cancel), butt
 
 
 
-### How to register a style
+### 1. How to register a style
 
 Using below code to register style
 
@@ -27,7 +27,7 @@ registerWidgetStyle('heading', {
 })
 ```
 
-### How to register option on existing style
+### 2. How to register option on existing style
 
 Add style option to an existing style.
 
@@ -42,4 +42,22 @@ registerWidgetStyleOption('heading',
     `,
     icon: ''  
 }], 'margin')
+```
+
+### 3. How to register pre-defined style
+
+Registering pre-define style is almost same as registering a normal style, just with empty style name.
+
+For instance, you want to register a site related heading to heading:
+```javascript
+registerWidgetStyleOption('heading', [{
+        identifier:'theme',
+        name:'Theme-heading',
+        cssStyle: `
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: green;
+     `}]
+    );
+
 ```
