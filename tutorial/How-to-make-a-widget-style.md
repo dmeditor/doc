@@ -1,6 +1,8 @@
 How to make widget style
 ---
-A widget style is configured csses for a widget, and there is style option the user can select. eg. For a button, there are style type(primary, cancel), style(fill, outline), size(small, media, large) etc. Also there are pre-defined widget styles where a develop can set everything inside one widget style, eg. for button site-primary / site-noral / site-cancel for a project.
+A widget style is configured csses for a widget, and there is style option the user can select. 
+
+For example for button, there are styles like button type(primary, cancel), button style(fill, outline), button size(small, media, large) etc. Also there are pre-defined widget styles where a develop can set everything inside one widget style, eg. for buttons developer can define site-primary / site-noral / site-cancel for a project.
 
 
 
