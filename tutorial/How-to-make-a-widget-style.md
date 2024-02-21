@@ -4,6 +4,7 @@ A widget style is configured csses for a widget, and there is style option the u
 
 For example for button, there are styles like button type(primary, cancel), button style(fill, outline), button size(small, media, large) etc. Also there are pre-defined widget styles where a develop can set everything inside one widget style, eg. for buttons developer can define site-primary / site-noral / site-cancel for a project.
 
+There are 2 ways to develop a style: css class and inline-css. Css classes way is quite handy if you use utility based css style eg. Tailwind. Note inline-css uses css-in-js way so nested css are support see [Sample in emotion](https://emotion.sh/docs/nested).
 
 
 ### 1. How to register a style
