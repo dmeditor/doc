@@ -9,6 +9,6 @@ Common key: root
 |   table   |  tr   |     Table row        |
 |        |    td |       Table cell      |
 |        |   th  |   Table head          |
-|        |     |             |
-|        |     |             |
+|   tabs     |     |             |
+|   accordion     |     |             |
 |        |     |             |
