@@ -31,11 +31,15 @@ Widget variant can act similar to widget, just with identifier: \<widget identif
 
 When storing data, it be like:
 
-`{type:'heading:article_title', ...}`
+```javascript
+{type:'heading:article_title', ...}
+```
 
 When setting allowed child types
 
-`{allowed_types:['heading:article_title', ...]`
+```javascript
+{allowed_types:['heading:article_title', ...]
+```
 
 
 
