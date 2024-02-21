@@ -19,7 +19,7 @@ cssStyle: {
 
 Common key: `root` - the root element of a widget
 
-| Widget | Dey | Description |
+| Widget | Key | Description |
 |--------|-----|-------------|
 |   Heading |    |             |
 |   Table   |  `tr`   |     Table row        |
