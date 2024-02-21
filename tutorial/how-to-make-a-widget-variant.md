@@ -19,7 +19,7 @@ registerWidgetVariant({
       return {
         id: nanoid(),
         type: 'heading:article_title',
-        data: { value: 'Gradient heading', level: 3, settings: {color:'red'} },
+        data: { value: 'Article title', level: 3, settings: {color:'red'} },
       };
     },
   }
