@@ -34,6 +34,25 @@ Definition
 |------|------|----------|-------------|------|
 |  createBlock    |  () => `object`    | true |  Invoked when creating this widget's block. Need to return an entity object(defined in `entity.ts`)      |             |
 
+Register widget
+------
+### registerWidget
+```javascript
+registerWidget(<widget definition object>,
+   {render: <widget render component>,
+    onServerSideLoad: <server side load function>
+   })
+```
+
+| Name | Type | Required | Description | Comment |
+|------|------|----------|-------------|------|
+|  render    |  `render component`    |    `true`      |     The render implemenation of a widget        |      |
+|  onServerSideLoad    |  `(data: DMEData.Block, serverParameters: any)=>void`    |    `false`      |     Implemention of server side load before using DMEditorView or just data converting.   |   Used typically in SSR   |
+
+
+
+
+
 Widget Render
 -----
 ### WidgetRenderProps
