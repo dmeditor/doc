@@ -26,6 +26,7 @@ Publish your widget to our store
 API Reference
 --------
 Use DM Editor
+
 [DM Editor configuration](./reference/configuration.md)
 
 Develop widget
