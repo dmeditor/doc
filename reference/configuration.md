@@ -31,7 +31,9 @@ setDMEditorConfig({
 Here is an example of widgets configuration. Key is the widget identifier, the settings of a widget varyies on specific widget, but there are some common properties.
 ```javascript
 widgets: {
-  text: { defaultStyle: {_:'big-line-height'}, fonts: ['Arial', 'Times new man']},
+  text: { defaultStyle:{_:'big-line-height'},
+          fonts: ['Arial', 'Times new man']
+      },
  }
 ```
 
