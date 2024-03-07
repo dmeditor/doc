@@ -29,7 +29,7 @@ API Reference
 --------
 Use DM Editor
 
-[DMEditor, DMEditorView & dmeditorServerSideLoad](./reference/dmeditor.md)
+[DMEditor, DMEditorView & dmeServerSideLoad](./reference/dmeditor.md)
 
 [DM Editor configuration](./reference/configuration.md)
 
