@@ -31,7 +31,7 @@ Use DM Editor
 
 [DM Editor configuration](./reference/configuration.md)
 
-[DMEditorView & dmeditorServerSideLoad](./reference/ssr_api.md)
+[DMEditorView & dmeditorServerSideLoad](./reference/dmeditorview.md)
 
 
 Develop widget
