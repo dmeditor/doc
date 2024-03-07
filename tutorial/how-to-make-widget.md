@@ -145,3 +145,33 @@ Registration the setting component:
 ```javascript
 registerSettingComponent('setting_input', SettingInput);
 ```
+
+### 6. SSR data converting
+Sometimes widget needs to convert data before Server Side Render. For example, a widget shows top 10 article list under a folder. The data needs to fetched dynamically when requesting.
+
+Below is an example of getting image url, while the widget only stores image id. Implement the converting and register the function on `onServerSideLoad`.
+
+
+```javascript
+
+const onServerLoad = async (blockData, context)=>{
+    const imageID = blockData.settings.imageID;
+    fetch('/api/image/'+imageID).then((res)=>res.json()).then((data)=>{
+      blockData.url = data.url;
+    })
+}
+
+registerWidget(
+{
+   type: 'sample',
+   name: 'Sample widget',
+   ...
+  },
+  {render:SampleWidget,
+   onServerSideLoad: onServerLoad
+}
+)
+```
+
+
+
