@@ -43,8 +43,6 @@ Develop widget
 
 [Widget style keys](./reference/widget-style-keys.md)
 
-[SSR Data fetch](./)
-
 
 Develop plugin
 
