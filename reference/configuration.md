@@ -42,13 +42,18 @@ widgets: {
 |  defaultStyle    |  `object`    |    `{_:'primary'}` <br /> `{type:'primary', size:'large'}`     |   Default style when creating a new block based on a widget.  |     |
 
 
-
 #### `text`
 
 | Name | Type | Example | Description | Comment |
 |------|------|----------|-------------|------|
 |  fonts    |  `Array<string>`    |    `['Arial', 'Times new roman']`      |    Font list in text widget.    |     |
 
+#### `heading`
 
+#### `image`
 
 ### `plugins`
+
+#### `tailwind`
+
+#### `bootstrap`
