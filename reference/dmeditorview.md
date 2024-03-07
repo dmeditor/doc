@@ -4,7 +4,7 @@
 DMEditorView is used for viewing DM Editor data. It's basically 'view mode' of DMEditor. It can be used in both client and server side.
 
 ```javascript
- import {DMEditorView} from 'dmeditor';
+import {DMEditorView} from 'dmeditor';
 
 ...
  <DMEditorView data={data} theme="blue" />
@@ -20,3 +20,7 @@ Below are properties:
 
   
 ### dmeditorServerSideLoad
+
+`dmeditorServerSideLoad` asynchronically iterate all block data and invoke widgets' [`onServerSideLoad`](./widget.md#registerwidget) implementation and return udpated data.
+
+Note: It's typical to invoike this function before page is loaded, eg. in `getServerSideProps` in nextjs.
