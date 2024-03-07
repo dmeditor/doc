@@ -112,7 +112,7 @@ registerWidget(
    name: 'Sample widget',
    ...
   },
-  SampleWidget
+  {render:SampleWidget}
 )
 ```
 
