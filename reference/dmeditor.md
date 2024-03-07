@@ -34,3 +34,5 @@ Note: It's typical to invoike this function before page is loaded, eg. in `getSe
 |  data    |  `Array<object>`    |    `true`      |    Data saved from DM Editor       |      |
 |  context    |  `object`    |    `true`      | Context of the request, server info, etc |      |
 
+***return***
+It returns updated data.
