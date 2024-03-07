@@ -25,6 +25,10 @@ Publish your widget to our store
 
 API Reference
 --------
+Use DM Editor
+[DM Editor configuration](./reference/configuration.md)
+
+Develop widget
 
 [Hook useEditorStore](./tutorial/useEditorStore.md)
 
@@ -35,3 +39,7 @@ API Reference
 [Widget style keys](./reference/widget-style-keys.md)
 
 [SSR Data fetch](./)
+
+Develop plugin
+[callbacks](./)
+
