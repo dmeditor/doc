@@ -37,7 +37,7 @@ Develop widget
 
 [Hook useEditorStore](./tutorial/useEditorStore.md)
 
-[Widget definition, registration](./reference/widget.md)
+[Widget definition & registration](./reference/widget.md)
 
 [Widget setting components](./reference/setting-components.md)
 
