@@ -17,6 +17,8 @@ setDMEditorConfig({
 
 ### `general`
 
+
+
 ### `editor`
 | Name | Type | Example | Description | Comment |
 |------|------|------|------------|------|
