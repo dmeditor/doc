@@ -1,6 +1,20 @@
 
 ## DM Editor Configuration
 
+Use `setDMEditorConfig()` to set DM Editor configuration. Example:
+```javascript
+
+setDMEditorConfig({
+  editor:{
+    defaultTheme: 'my-project'
+  },
+  widgets: {
+    heading: { defaultStyle: { _: 'big-space' } },
+  },
+});
+```
+
+
 ### `general`
 
 ### `editor`
