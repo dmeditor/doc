@@ -15,7 +15,7 @@ Below are properties:
 
 | Name | Type | Required | Description | Comment |
 |------|------|----------|-------------|------|
-|  data    |  `Array<object>`    |    `true`      |      A json data from saved/converted DM Editor data.       |      |
+|  data    |  `Array<object>`    |    `true`      |      A json data from saved DM Editor data or converted by `dmeditorServerSideLoad`.       |      |
 |  theme    |  `string`    |    `false`      | Theme of the page |      |
 
   
@@ -24,3 +24,10 @@ Below are properties:
 `dmeditorServerSideLoad` asynchronically iterate all block data and invoke widgets' [`onServerSideLoad`](./widget.md#registerwidget) implementation and return udpated data.
 
 Note: It's typical to invoike this function before page is loaded, eg. in `getServerSideProps` in nextjs.
+
+***Parameters***
+| Name | Type | Required | Description | Comment |
+|------|------|----------|-------------|------|
+|  data    |  `Array<object>`    |    `true`      |    Data saved from DM Editor       |      |
+|  context    |  `object`    |    `true`      | Context of the request, server info, etc |      |
+
