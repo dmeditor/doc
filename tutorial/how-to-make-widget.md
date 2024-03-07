@@ -147,7 +147,7 @@ registerSettingComponent('setting_input', SettingInput);
 ```
 
 ### 6. SSR data fetching
-Sometimes widget needs to convert data before Server Side Render. For example, a widget shows top 10 article list under a folder. The data needs to fetched dynamically when requesting.
+Sometimes widget needs to convert data before Server Side Rendering. For example, a widget shows top 10 article list under a folder. The data needs to fetched dynamically when requesting.
 
 Below is an example of getting image url, while the widget only stores image id. Implement the converting and register the function on `onServerSideLoad`.
 
