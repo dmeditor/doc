@@ -29,10 +29,9 @@ API Reference
 --------
 Use DM Editor
 
-[DM Editor configuration](./reference/configuration.md)
-
 [DMEditor, DMEditorView & dmeditorServerSideLoad](./reference/dmeditor.md)
 
+[DM Editor configuration](./reference/configuration.md)
 
 Develop widget
 
