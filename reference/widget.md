@@ -1,4 +1,4 @@
-Widget reference
+Widget deinfition & registration reference
 ==========
 
 Definition
