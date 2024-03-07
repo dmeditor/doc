@@ -30,6 +30,7 @@ API Reference
 Use DM Editor
 
 [DM Editor configuration](./reference/configuration.md)
+
 [SSR API](./reference/ssr_api.md)
 
 
