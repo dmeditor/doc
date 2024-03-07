@@ -42,7 +42,7 @@ Develop widget
 [Widget style keys](./reference/widget-style-keys.md)
 
 
-Develop plugin / Intergrate with backend system
+Intergrate with backend system
 
 [Callbacks](./reference/callbacks.md)
 
