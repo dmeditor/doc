@@ -9,9 +9,7 @@ Install DM Editor
 
 Use DM Editor for editing
 
-Use DM Editor for view
-
-SSR(Server side rendering)
+Use DM Editor for view & SSR
 
 Develop widget, variant, style
 -------
