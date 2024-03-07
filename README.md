@@ -48,5 +48,5 @@ Develop widget
 
 Develop plugin
 
-[callbacks](./reference/callbacks.md)
+[Callbacks](./reference/callbacks.md)
 
