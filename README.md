@@ -29,6 +29,7 @@ Use DM Editor
 
 [DM Editor configuration](./reference/configuration.md)
 
+
 Develop widget
 
 [Hook useEditorStore](./tutorial/useEditorStore.md)
@@ -40,6 +41,7 @@ Develop widget
 [Widget style keys](./reference/widget-style-keys.md)
 
 [SSR Data fetch](./)
+
 
 Develop plugin
 [callbacks](./)
