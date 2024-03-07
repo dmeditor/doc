@@ -53,6 +53,7 @@ widgets: {
 #### `image`
 
 ### `plugins`
+The configuration of a plugin will depend on specific plugin.
 
 #### `tailwind`
 
