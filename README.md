@@ -13,7 +13,7 @@ Use DM Editor for view
 
 SSR(Server side rendering)
 
-Develop widget, template, style
+Develop widget, variant, style
 -------
 [How to make a local widget](./tutorial/how-to-make-widget.md)
 
