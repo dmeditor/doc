@@ -37,7 +37,7 @@ widgets: {
  }
 ```
 
-**Common propertie:s**
+**Common properties:**
 
 | Name | Type | Example | Description | Comment |
 |------|------|----------|-------------|------|
