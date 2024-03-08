@@ -32,7 +32,7 @@ Note: It's typical to invoike this function before page is loaded, eg. in `getSe
 | Name | Type | Required | Description | Comment |
 |------|------|----------|-------------|------|
 |  data    |  `Array<object>`    |    `true`      |    Data saved from DM Editor       |      |
-|  context    |  `object`    |    `true`      | Context of the request, server info, etc |      |
+|  context    |  `object`    |    `true`      | Context of the request, server info, content object, etc |      |
 
 **return**
 
