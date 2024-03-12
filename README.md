@@ -41,6 +41,7 @@ Develop widget
 
 [Widget style keys](./reference/widget-style-keys.md)
 
+[Utility components](./reference/utility.md)
 
 Intergrate with backend system
 
