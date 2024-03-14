@@ -41,6 +41,8 @@ Develop widget
 
 [Widget style keys](./reference/widget-style-keys.md)
 
+[CSS variables](./reference/css-variables.md)
+
 [Data format](./#)
 
 [Utility components](./reference/utility.md)
