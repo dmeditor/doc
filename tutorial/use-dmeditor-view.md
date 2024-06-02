@@ -3,6 +3,8 @@ Use DM Editor for view
 
 ```typescript
 
+registerDefaultWidgets(); //Note: it's a good practise to put initialization to a separate file. eg. initDMEditor.ts
+
 export const View = ()=>{
    const data = [[
     {
