@@ -19,8 +19,6 @@ Develop widget, variant, style
 
 Develop remote widget
 
-Publish your widget to our store
-
 API Reference
 --------
 Use DM Editor
