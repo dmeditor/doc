@@ -8,6 +8,7 @@ import {DMEditor} from 'dmeditor';
  <DMEditor />
 
 ...
+```
 
 ### DMEditorView
 DMEditorView is used for viewing DM Editor data. It's basically 'view mode' of DMEditor. It can be used in both client and server side.
