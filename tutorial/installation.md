@@ -9,6 +9,8 @@ npm install dmeditor
 
 ## First use
 ```typescript
+import {registerDefaultWidgets, DMEditor} from 'dmeditor';
+
 registerDefaultWidgets();
 
 const App = () => {
