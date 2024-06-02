@@ -1,5 +1,8 @@
 # DM Editor documentation
 
+
+⚠️ this documentation is for 0.2.x
+
 ## Installation
 ```shell
 npm install dmeditor
