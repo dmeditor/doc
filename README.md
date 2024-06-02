@@ -7,9 +7,9 @@ Use DM Editor
 -------
 [Install DM Editor](./tutorial/installation.md)
 
-Use DM Editor for editing
+[Use DM Editor](./tutorial/use-dmeditor.md)
 
-Use DM Editor for view & SSR
+[Use DM Editor for view & SSR](./tutorial/use-dmeditor-view.md)
 
 Develop widget, variant, style
 -------
