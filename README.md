@@ -25,7 +25,7 @@ Use DM Editor
 
 [Use DM Editor for view & SSR](./tutorial/use-dmeditor-view.md)
 
-Develop widget, variant, style
+Develop widget, style
 -------
 [How to make a local widget](./tutorial/how-to-make-widget.md)
 
