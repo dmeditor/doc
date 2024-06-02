@@ -7,7 +7,7 @@ npm install dmeditor
 ```
 
 
-## Edit
+## First use
 ```typescript
 registerDefaultWidgets();
 
