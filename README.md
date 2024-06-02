@@ -5,7 +5,7 @@ Welcome to documentation of DM Editor.
 
 Use DM Editor
 -------
-Install DM Editor
+[Install DM Editor](./tutorial/installation.md)
 
 Use DM Editor for editing
 
