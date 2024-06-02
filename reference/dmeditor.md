@@ -1,4 +1,4 @@
-## DMEditorView & dmeServerSideLoad
+## DMEditor, DMEditorView, dmeServerSideLoad
 
 ### DMEditor
 ```javascript
