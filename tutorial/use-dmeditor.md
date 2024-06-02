@@ -1,11 +1,13 @@
 User DM Editor
 ===
 
+
+
 ```typescript
 import {registerDefaultWidgets, DMEditorRefType} from 'dmeditor';
 
 
-registerDefaultWidgets();
+registerDefaultWidgets(); //note: it's a good practise to put initialization to a separate file. eg. initDMEditor.ts
 
 
 export App = ()=>{
