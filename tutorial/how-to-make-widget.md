@@ -37,13 +37,13 @@ A definition defines 'meta data' of a widget, and other information like setting
         {
           name: 'Background Color',
           settingComponent: 'color',
-          category: 'settings',
+          category: 'style',
           property: 'settings.backgroundColor',
         },
         {
           name: 'Width',
           settingComponent: 'setting_input',
-          category: 'settings',
+          category: 'style',
           property: 'settings.width',
         },
       ],
