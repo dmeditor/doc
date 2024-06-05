@@ -1,5 +1,6 @@
 :root{
   --md-primary-fg-color: #333333;
+  --md-typeset-a-color: #005ac6;
 }
 
 .md-nav{
@@ -7,10 +8,13 @@
   margin-top: 5px;
 }
 
-a{
-  text-decoration: underline;
+.md-typeset h2{
+  font-weight: normal;
+}
+
+.md-typeset table:not([class]) {
+  font-size:.71rem;
 }
 
 body{
-  color: #333333;
 }
