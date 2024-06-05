@@ -26,13 +26,17 @@ const App = () => {
 
 ## Tutorial
 
-### Use DM Editor
+#### Concepts
+
+[DM Editor concepts](./tutorial/concepts.md)
+
+#### Use DM Editor
 
 [Use DM Editor](./tutorial/use-dmeditor.md)
 
 [Use DM Editor for view & SSR](./tutorial/use-dmeditor-view.md)
 
-### Develop widget, style
+#### Develop widget, style
 
 [Make a widget](./tutorial/how-to-make-widget.md)
 
