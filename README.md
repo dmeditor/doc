@@ -1,66 +1,66 @@
 # DM Editor documentation
 
-
 ⚠️ this documentation is for 0.2.x
 
 ## Installation
+
 ```shell
 npm install dmeditor
 ```
 
-
 ## First use
+
 ```typescript
-import {registerDefaultWidgets, DMEditor} from 'dmeditor';
+import { registerDefaultWidgets, DMEditor } from "dmeditor";
 
 registerDefaultWidgets();
 
 const App = () => {
-  return <div>
+  return (
+    <div>
       <DMEditor />
-    </div>;
-}
+    </div>
+  );
+};
 ```
 
-Use DM Editor
--------
+## Tutorial
+
+### Use DM Editor
+
 [Use DM Editor](./tutorial/use-dmeditor.md)
 
 [Use DM Editor for view & SSR](./tutorial/use-dmeditor-view.md)
 
-Develop widget, style
--------
-[How to make a local widget](./tutorial/how-to-make-widget.md)
+### Develop widget, style
 
-[How to make widget style](./tutorial/How-to-make-a-widget-style.md)
+[Make a widget](./tutorial/how-to-make-widget.md)
 
-Develop remote widget
+[Style a widget](./tutorial/How-to-make-a-widget-style.md)
 
-API Reference
---------
-Use DM Editor
+## API Reference
 
-[DMEditor, DMEditorView & dmeServerSideLoad](./reference/dmeditor.md)
+Use DM Editor in project
 
-[DM Editor configuration](./reference/configuration.md)
+| Category                | API                                                                   | Comment                              |
+| ----------------------- | --------------------------------------------------------------------- | ------------------------------------ |
+| Use DM Editor           | [DMEditor, DMEditorView & dmeServerSideLoad](./reference/dmeditor.md) |                                      |
+| Configuration           | [setDMEditorConfig](./reference/configuration.md)                     |                                      |
+| Configuration callbacks | [Callbacks](./reference/callbacks.md)                                 | Eg. for integrate with image library |
+| DM Editor css variables | [CSS variables](./reference/css-variables.md)                         |                                      |
 
 Develop widget
 
-[Hook useEditorStore](./tutorial/useEditorStore.md)
+| Category              | API                                                     | Comment |
+| --------------------- | ------------------------------------------------------- | ------- |
+| Widget implementation | [registerWidget](./reference/widget.md)                 |         |
+| State management      | [Hook useEditorStore](./tutorial/useEditorStore.md)     |         |
+| Setting components    | [setting components](./reference/setting-components.md) |         |
+| Widget style          | [Widget style keys](./reference/widget-style-keys.md)   |         |
+| Utility               | [Utility components](./reference/utility.md)            |         |
 
-[Widget definition & registration](./reference/widget.md)
+Data
 
-[Widget setting components](./reference/setting-components.md)
-
-[Widget style keys](./reference/widget-style-keys.md)
-
-[CSS variables](./reference/css-variables.md)
-
-[Data format](./#)
-
-[Utility components](./reference/utility.md)
-
-Intergrate with backend system
-
-[Callbacks](./reference/callbacks.md)
-
+| Category    | API                | Comment |
+| ----------- | ------------------ | ------- |
+| Data format | [Data format](./#) |         |
