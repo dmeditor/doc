@@ -8,7 +8,7 @@
 npm install dmeditor
 ```
 
-## First use
+## First example
 
 ```typescript
 import { registerDefaultWidgets, DMEditor } from "dmeditor";
@@ -24,25 +24,21 @@ const App = () => {
 };
 ```
 
-## Tutorial
+## Documentation overview
 
-#### Concepts
+### Tutorial
 
-[DM Editor concepts](./tutorial/concepts.md)
+####
 
-#### Use DM Editor
+| Category       | Link                                                            | Comment |
+| -------------- | --------------------------------------------------------------- | ------- |
+| Concepts       | [DM Editor concepts](./tutorial/concepts.md)                    |         |
+| Use DM Editor  | [Use DM Editor](./tutorial/use-dmeditor.md)                     |         |
+|                | [Use DM Editor for view & SSR](./tutorial/use-dmeditor-view.md) |         |
+| Develop widget | [Make a widget](./tutorial/how-to-make-widget.md)               |         |
+|                | [Style a widget](./tutorial/How-to-make-a-widget-style.md)      |         |
 
-[Use DM Editor](./tutorial/use-dmeditor.md)
-
-[Use DM Editor for view & SSR](./tutorial/use-dmeditor-view.md)
-
-#### Develop widget, style
-
-[Make a widget](./tutorial/how-to-make-widget.md)
-
-[Style a widget](./tutorial/How-to-make-a-widget-style.md)
-
-## API Reference
+### API Reference
 
 Use DM Editor in project
 
