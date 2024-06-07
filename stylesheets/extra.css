@@ -16,5 +16,6 @@
   font-size:.71rem;
 }
 
-body{
+.md-typeset h1{
+  font-weight: normal;
 }
