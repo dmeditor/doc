@@ -30,13 +30,14 @@ const App = () => {
 
 ####
 
-| Category       | Link                                                            | Comment |
-| -------------- | --------------------------------------------------------------- | ------- |
-| Concepts       | [DM Editor concepts](./tutorial/concepts.md)                    |         |
-| Use DM Editor  | [Use DM Editor](./tutorial/use-dmeditor.md)                     |         |
-|                | [Use DM Editor for view & SSR](./tutorial/use-dmeditor-view.md) |         |
-| Develop widget | [Make a widget](./tutorial/how-to-make-widget.md)               |         |
-|                | [Style a widget](./tutorial/How-to-make-a-widget-style.md)      |         |
+| Category       | Link                                                                                          | Comment |
+| -------------- | --------------------------------------------------------------------------------------------- | ------- |
+| Concepts       | [DM Editor concepts](./tutorial/concepts.md)                                                  |         |
+| Use DM Editor  | [Use DM Editor](./tutorial/use-dmeditor.md)                                                   |         |
+|                | [Use DM Editor for view & SSR](./tutorial/use-dmeditor-view.md)                               |         |
+| Develop widget | [Make a widget](./tutorial/how-to-make-widget.md)                                             |         |
+|                | [Make a mixed widget (wiget containing other widget)](./tutorial/how-to-make-mixed-widget.md) |         |
+|                | [Style a widget](./tutorial/How-to-make-a-widget-style.md)                                    |         |
 
 ### API Reference
 
