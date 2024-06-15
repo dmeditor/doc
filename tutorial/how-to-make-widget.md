@@ -1,11 +1,11 @@
-How to make a widget
-======
+# How to make a widget
 
-A widget can be simple like a button, or complex like intractive form. 
+A widget can be simple like a button, or complex like intractive form.
 
 Conceptally a widget is a React component with customize settings. To simplify settings(eg. color, sliding, padding) we provide some setting component(eg. `color`) which can be configured and the setting will work automatially, so the developer can focus on the widget rendering.
 
 ### Sample widget
+
 Click [this](https://github.com/dmeditor/dmeditor/tree/main/samples/dev/SampleWidget) to see our widget sample.
 
 ### Widget development overview
@@ -20,9 +20,10 @@ You will need to [register](#4-register-your-widget) 1. and 3. using `registerWi
 
 In addition, you may need to create your [customized setting component](#5-customized-setting) if our built-in setting components don't fit your need.
 
-
 ### 1. Widget definition
+
 A definition defines 'meta data' of a widget, and other information like settings, methods (eg, return data after user create a block from this widget). Below is the meta data information:
+
 ```javascript
 {
   // Name of the widget
@@ -30,8 +31,8 @@ A definition defines 'meta data' of a widget, and other information like setting
 
   // Type of the widget, unique identifier for this widget.
   // Only allow small case, -, numbers, starting from letter
-  type: 'heading', 
-  category: 'widget',
+  type: 'heading',
+  category: 'basic',
   icon: 'TextFormatOutlined',
   settings: [
         {
@@ -49,28 +50,32 @@ A definition defines 'meta data' of a widget, and other information like setting
       ],
 }
 ```
-Note:  `setting_input` is a customized setting component, see [Customized setting](#4-customized-setting) for implementation.
+
+Note: `setting_input` is a customized setting component, see [Customized setting](#4-customized-setting) for implementation.
 
 See our [definition reference](../reference/widget.md) for full properties and explaination.
 
-
 ### 2. Entity
+
 An entity defines data model. It's recommanded to define a model so the widget data manipulation is easier. The saved json will be same as entity definition.
+
 ```javascript
-export interface EntitySampleWidget{
-    settings: {
-      width: number;
-      backgroundColor?: string;
-    };
-  }
+export interface EntitySampleWidget {
+  settings: {
+    width: number,
+    backgroundColor?: string,
+  };
+}
 ```
 
 ### 3. Render component
 
-#### Render 
+#### Render
+
 Below is a render component sample to render:
 
 Note `EntitySampleWidget` is the Entity definition.
+
 ```javascript
 export const SampleWidget = (props: DME.WidgetRenderProps<EntitySampleWidget>) => {
 const {
@@ -80,7 +85,7 @@ const {
   } = props;
 ...
 return (
-    <div>    
+    <div>
       <div
         style={{ width: width }}
         className={css`
@@ -94,6 +99,7 @@ return (
 ```
 
 #### Change data
+
 ```javascript
 const { updateSelectedBlock } = useEditorStore();
   const updateWidth = (e, v) => {
@@ -105,6 +111,7 @@ const { updateSelectedBlock } = useEditorStore();
 ```
 
 ### 4. Register your widget
+
 ```javascript
 registerWidget(
 {
@@ -117,7 +124,9 @@ registerWidget(
 ```
 
 ### 5. Customized setting
+
 Implementation:
+
 ```javascript
 const SettingInput = (props: DME.SettingComponentProps) => {
   const { property, value } = props;
@@ -142,15 +151,16 @@ const SettingInput = (props: DME.SettingComponentProps) => {
 ```
 
 Registration the setting component:
+
 ```javascript
-registerSettingComponent('setting_input', SettingInput);
+registerSettingComponent("setting_input", SettingInput);
 ```
 
 ### 6. SSR data fetching
+
 Sometimes widget needs to convert data before Server Side Rendering. For example, a widget shows top 10 article list under a folder. The article list data needs to fetched dynamically when requesting the page.
 
 Below is an example of getting image url, while the widget only stores image id. Implement the converting and register the function on `onServerSideLoad`.
-
 
 ```javascript
 
@@ -172,6 +182,3 @@ registerWidget(
 }
 )
 ```
-
-
-
