@@ -3,11 +3,11 @@
 A mixed widget is widget containing other widget. Besides following [making a widget](./how-to-make-widget.md), there are extra configuration regarding child rendering and widget setting.
 
 
-### mixed widget data
+### Mixed widget data
 
 It's recommaned to put all children blocks under property 'children', eg. Here is data example for Hero Text, where there is image on left and list on right.
 
-Note: It's important to keep order can disable deleting on the direct children(below are image and list), since these direct children strucutre is the 'schema' of mixed widget.
+⚠️ Note: It's important to keep order can disable deleting on the direct children(below are image and list), since this direct children strucutre is the 'schema' of mixed widget.
 
 ```javascript
 {
@@ -47,8 +47,15 @@ Note: It's important to keep order can disable deleting on the direct children(b
 
 ### Rendering children
 
+There are 2 components which can be used for rendering children:
 
+```javascript
+<BlockRender mode={mode} data={} path={} />
 
+<BlockListRender mode={mode} blockData={} path={} allowedTypes={} />
+```
+
+In most cases `BlockRender` is good enough. If you want to render a list directly(not using `list` widget), you can use `BlockListRender`. Eg. In Tabs/Accordion, a tab/accordion item can use `BlockListRender` to avoid unncessary `list` block as parent for content blocks in a tab.
 
 ### Child settings
 
