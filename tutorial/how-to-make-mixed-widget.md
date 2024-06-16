@@ -62,5 +62,58 @@ There are 2 components which can be used for rendering children:
 
 In most cases `BlockRender` is good enough. If you want to render a list directly(not using `list` widget), you can use `BlockListRender`. Eg. In Tabs/Accordion, a tab/accordion item can use `BlockListRender` to avoid unncessary `list` block as parent for content blocks in a tab.
 
-### Child settings
+### Children configuration
+Mixed widget can control's embeded children's settings and styles.
 
+In definition of the mixed widget, you can set rules by impelmenting below
+```javascript
+embedConfig?: {
+        enabledSettings?: (
+          settings: Array<Setting>,
+          styles: { [key: string]: Array<string> },
+          context: EmbedChildContext,
+        ) => { settings: Array<Setting>; enabledStyles?: { [key: string]: Array<string> } };
+
+        hasOwnView?: (context: EmbedChildContext) => boolean;
+      };
+
+```
+
+Example
+```javascript
+embedConfig: {
+      enabledSettings: (settings, styles, context) => {
+        const settingResult = settings.filter((item) => {
+          if (item.category !== 'block') {
+            return true;
+          } else {
+            if (context.relativePath.length === 1) {
+              if (context.relativePath[0] === 0) {
+                //image
+                if (!item.styleTags) {
+                  return true;
+                }
+                return arrayHasCommonElement(item.styleTags, ['container']);
+              } else {
+                //list
+                return item.styleTags?.includes('container');
+              }
+            }
+            return true;
+          }
+        });
+        let enabledStyles: any = {};
+        //list elements
+        if (context.relativePath[0] === 1 && context.relativePath.length === 2) {
+          enabledStyles = undefined;
+        }
+        return { settings: settingResult, enabledStyles: enabledStyles };
+      },
+      hasOwnView: (context) => {
+        if (context.relativePath.length >= 2 && context.relativePath[0] === 1) {
+          return true;
+        }
+        return false;
+      },
+    },
+```
