@@ -79,7 +79,9 @@ embedConfig?: {
 
 ```
 
-Example
+Below example set only showing 'container' setting of image and list, and disable all styles dropdown of image and list. At same time, for all children under 'list', use it's own setting panel instead of embeded setting panel.
+
+
 ```javascript
 embedConfig: {
       enabledSettings: (settings, styles, context) => {
@@ -104,7 +106,7 @@ embedConfig: {
         });
         let enabledStyles: any = {};
         //list elements
-        if (context.relativePath[0] === 1 && context.relativePath.length === 2) {
+        if (context.relativePath.length === 2) {
           enabledStyles = undefined;
         }
         return { settings: settingResult, enabledStyles: enabledStyles };
