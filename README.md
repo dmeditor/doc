@@ -24,6 +24,10 @@ const App = () => {
 };
 ```
 
+## Sample projects
+
+[See sample project](https://github.com/dmeditor/dmeditor-sample/)
+
 ## Documentation overview
 
 ### Tutorial
