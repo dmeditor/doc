@@ -34,15 +34,15 @@ const App = () => {
 
 ####
 
-| Category       | Link                                                          | Comment                                                             |
-| -------------- | ------------------------------------------------------------- | ------------------------------------------------------------------- |
-| Concepts       | [DM Editor concepts](./tutorial/concepts.md)                  | Basic concepts of DM Editor                                         |
-| Use DM Editor  | [DM Editor for editing](./tutorial/use-dmeditor.md)           | For editing                                                         |
-|                | [Integration](./tutorial/integration.md)                      | Inegration with your project or CMS                                 |
-|                | [DM Editor for viewing](./tutorial/use-dmeditor-view.md)      | View page/section in client or SSR                                  |
-| Develop widget | [Make a widget](./tutorial/how-to-make-widget.md)             |                                                                     |
-|                | [Make a mixed widget](./tutorial/how-to-make-mixed-widget.md) | Mixed widget is a widget containing other widgets                   |
-|                | [Style a widget](./tutorial/How-to-make-a-widget-style.md)    | You can use css-in-js or utility way to style widget (eg. tailwind) |
+| Category       | Link                                                          | Comment                                                                                                 |
+| -------------- | ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| Concepts       | [DM Editor concepts](./tutorial/concepts.md)                  | Basic concepts of DM Editor                                                                             |
+| Use DM Editor  | [DM Editor for editing](./tutorial/use-dmeditor.md)           | For editing                                                                                             |
+|                | [Integration](./tutorial/integration.md)                      | Integration with your project or CMS, eg. set project style, browse image, link, save data, save blocks |
+|                | [DM Editor for viewing](./tutorial/use-dmeditor-view.md)      | View page/section in client or SSR                                                                      |
+| Develop widget | [Make a widget](./tutorial/how-to-make-widget.md)             |                                                                                                         |
+|                | [Make a mixed widget](./tutorial/how-to-make-mixed-widget.md) | Mixed widget is a widget containing other widgets                                                       |
+|                | [Style a widget](./tutorial/How-to-make-a-widget-style.md)    | You can use css-in-js or utility way to style widget (eg. tailwind)                                     |
 
 ### API Reference
 
