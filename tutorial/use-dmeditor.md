@@ -38,9 +38,14 @@ export App = ()=>{
     initData();
   }, []);
 
+  const save(data)=>{
+     console.log(data); 
+     window.alert('Saved');
+  }
+
 return (
     <div>
-      <DMEditor ref={editorRef} />
+      <DMEditor ref={editorRef} onSave={save} />
     </div>
   );
 }
