@@ -46,7 +46,7 @@ It's recommaned to put all children blocks under property 'children', eg. Here i
 ```
 
 #### isEmbed true or false?
-isEmbed should be true unless the parent is an gloabl container, eg. (a tab, an accordtion item) - some of container is embed also - eg. heading inside list of hero text. In general, if you want the element has no relation from the mixed widget(eg. element under a tab), it can be false, otherwise alway set to true.
+isEmbed should be true unless the parent is an gloabl container, eg. (a tab, an accordtion item) - some of container is embed also - eg. heading inside list of hero text. In general, if you want the element has no relation from the mixed widget(eg. element under a tab), it can be false, otherwise alway set to true, or if you want to treat the block part of the mixed widget or not.
 
 ### Rendering children
 
