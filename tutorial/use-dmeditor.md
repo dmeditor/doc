@@ -1,7 +1,7 @@
 User DM Editor
 ===
 
-
+Below is a simple sample of loading and saving data
 
 ```typescript
 import {registerDefaultWidgets, DMEditorRefType} from 'dmeditor';
