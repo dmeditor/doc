@@ -30,7 +30,7 @@ export App = ()=>{
   const initData = ()=>{
     const editor = editorRef.current;
     if (editor) {
-      editor.setEditorJson(data);      
+      editor.setData(data);      
     }
   };
 
