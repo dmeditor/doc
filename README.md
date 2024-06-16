@@ -64,6 +64,7 @@ const App = () => {
 | Setting components    | [setting components](./reference/setting-components.md) |         |
 | Widget style          | [Widget style keys](./reference/widget-style-keys.md)   |         |
 | Utility               | [Utility components](./reference/utility.md)            |         |
+| util               | [util functions](./reference/utils.md)            |         |
 
 #### Data
 
