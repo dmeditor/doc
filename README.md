@@ -36,7 +36,7 @@ const App = () => {
 
 | Category       | Link                                                            | Comment                                        |
 | -------------- | --------------------------------------------------------------- | ---------------------------------------------- |
-| Concepts       | [DM Editor concepts](./tutorial/concepts.md)                    |                                                |
+| Concepts       | [DM Editor concepts](./tutorial/concepts.md)                    | Basic concepts of DM Editor                    |
 | Use DM Editor  | [Use DM Editor](./tutorial/use-dmeditor.md)                     | For editing                                    |
 |                | [Ingeration](./tutorial/integration.md)                         | Inegration with your system or CMS             |
 |                | [Use DM Editor for view & SSR](./tutorial/use-dmeditor-view.md) | View dmeditor output in client or SSR          |
