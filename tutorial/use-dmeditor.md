@@ -1,5 +1,6 @@
-User DM Editor
-===
+# User DM Editor
+
+## Simple use
 
 Below is a simple sample of loading and saving data
 
@@ -8,7 +9,6 @@ import {registerDefaultWidgets, DMEditorRefType} from 'dmeditor';
 
 
 registerDefaultWidgets(); //note: it's a good practise to put initialization to a separate file. eg. initDMEditor.ts
-
 
 export App = ()=>{
   const editorRef = useRef<DMEditorRefType>(null);
@@ -30,7 +30,7 @@ export App = ()=>{
   const initData = ()=>{
     const editor = editorRef.current;
     if (editor) {
-      editor.setData(data);      
+      editor.setData(data);
     }
   };
 
@@ -39,7 +39,7 @@ export App = ()=>{
   }, []);
 
   const save(data)=>{
-     console.log(data); 
+     console.log(data);
      window.alert('Saved');
   }
 
@@ -50,3 +50,7 @@ return (
   );
 }
 ```
+
+## Save data
+
+## Edit options
