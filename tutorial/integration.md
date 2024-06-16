@@ -1,6 +1,6 @@
 ## Integration
 
-DM Editor supports intergration with your system, typically lik your own system or CMS.
+DM Editor supports intergration with your system, typically like your own system or CMS.
 
 ### Browse & fetch image
 
