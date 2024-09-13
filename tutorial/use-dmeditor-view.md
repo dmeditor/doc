@@ -49,6 +49,7 @@ Put below in global css so some widget's full width can work (eg. nextjs+tailwin
     --dme-container-width: 100vw;
 }
 
+/*optional to remove horizontal scrollbar*/
 body{
     overflow-x: hidden;
 }
