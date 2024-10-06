@@ -11,7 +11,7 @@ DM Editor has been tested on next.js.
 
 ### Invoke server load for each widget
 
-Below code will iterate all widget of this page and invoke onServerSideLoad of widget.
+Below code will iterate all widgets of this page and invoke `onServerSideLoad` of those widgets.
 
 ```javascript
 
