@@ -1,6 +1,6 @@
 # DM Editor documentation
 
-⚠️ this documentation is for 0.2.x
+⚠️ this documentation is in making, final version should be ready before November 2024
 
 ## Installation
 
