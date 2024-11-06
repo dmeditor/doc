@@ -38,12 +38,12 @@ const App = () => {
 | -------------- | ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
 | Concepts       | [DM Editor concepts](./tutorial/concepts.md)                  | Basic concepts of DM Editor                                                                             |
 | Use DM Editor  | [DM Editor for editing](./tutorial/use-dmeditor.md)           | For editing                                                                                             |
-|                | [Integrate with project](./tutorial/integration.md)           | Integration with your project or CMS, eg. set project style, browse image, link, save data, save blocks |
-|                | [DM Editor for viewing](./tutorial/use-dmeditor-view.md)      | View page/section in client                                                                    |
-|                | [SSR](./tutorial/ssr.md)      | View page on SSR                                                                      |
+|                | View in [client](./tutorial/use-dmeditor-view.md), [SSR](./tutorial/ssr.md)     | Render page in client or SSR or both.                                                                    |
 | Develop widget | [Make a widget](./tutorial/how-to-make-widget.md)             |                                                                                                         |
 |                | [Make a mixed widget](./tutorial/how-to-make-mixed-widget.md) | Mixed widget is a widget containing other widgets                                                       |
 |                | [Style a widget](./tutorial/How-to-make-a-widget-style.md)    | You can use css-in-js or utility way to style widget (eg. tailwind)                                     |
+|   Integration             | [Integration for assets, saving block](./tutorial/integration.md)           | Integration with your project or CMS, eg. set project style, browse image, link, save blocks |
+
 
 ### API Reference
 
