@@ -3,7 +3,7 @@
 ⚠️ Note: this documentation is still in making, final version should be ready before end of Nov 2024.
 
 Useful resources:
-- [Roadmap](https://github.com/orgs/dmeditor/projects/1)
+- [See our roadmap](https://github.com/orgs/dmeditor/projects/1)
 - [Discussions on Github](https://github.com/dmeditor/dmeditor/discussions)
 
 ## Installation
