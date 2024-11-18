@@ -34,6 +34,7 @@ const App = () => {
 ## Sample projects
 
 [Simple Demo](https://demo.dmeditor.io)
+
 [Sample project](https://github.com/dmeditor/dmeditor-sample/)
 
 ## Documentation overview
@@ -45,8 +46,8 @@ const App = () => {
 | Category       | Link                                                          | Comment                                                                                                 |
 | -------------- | ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
 | Concepts       | [DM Editor concepts](./tutorial/concepts.md)                  | Basic concepts of DM Editor                                                                             |
-| Use DM Editor  | [DM Editor for editing](./tutorial/use-dmeditor.md)           | For editing                                                                                             |
-|                | DM Editor for view in [client](./tutorial/use-dmeditor-view.md), [SSR](./tutorial/ssr.md)     | Render page in client or SSR or both.                                                                    |
+| Use DM Editor  | [Use DM Editor in editing](./tutorial/use-dmeditor.md)           | For editing                                                                                             |
+|                | DM Editor view in [client side](./tutorial/use-dmeditor-view.md), [SSR](./tutorial/ssr.md)     | Render page in client or SSR or both.                                                                    |
 | Develop widget | [Make a widget](./tutorial/how-to-make-widget.md)             |                                                                                                         |
 |                | [Make a mixed widget](./tutorial/how-to-make-mixed-widget.md) | Mixed widget is a widget containing other widgets                                                       |
 |                | [Style a widget](./tutorial/How-to-make-a-widget-style.md)    | You can use css-in-js or utility way to style widget (eg. tailwind)                                     |
