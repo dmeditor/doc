@@ -3,6 +3,8 @@
 ⚠️ Note: this documentation is still in making, final version should be ready before end of Nov 2024.
 
 
+[Simple Demo](https://demo.dmeditor.io)
+
 Useful resources:
 
 - [Github Repo](https://github.com/dmeditor/dmeditor/dmeditor)
@@ -32,8 +34,6 @@ const App = () => {
 ```
 
 ## Sample projects
-
-[Simple Demo](https://demo.dmeditor.io)
 
 [Sample project](https://github.com/dmeditor/dmeditor-sample/)
 
