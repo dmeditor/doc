@@ -4,6 +4,7 @@
 
 Useful resources:
 
+- [Github Repo](https://github.com/dmeditor/dmeditor/dmeditor)
 - [Follow our roadmap](https://github.com/orgs/dmeditor/projects/1)
 - [Discussions on Github](https://github.com/dmeditor/dmeditor/discussions)
 
