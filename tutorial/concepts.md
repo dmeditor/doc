@@ -1,10 +1,16 @@
+This article explains some concepts and priciple of using DM Editor and extending widgets or styles.
+
+### Main idea
+
 !!! quote
 
-    The idea behind is to have an editor where it is easy to develop and style widget within React ecosystem, in the end together with developer bring good user experience for page editing.
+    The idea behind DM Editor is to have an editor where it is easy to develop and style widget within React ecosystem, in the end together with developer bring good user experience for page editing.
 
-!!! note
+### Developer centered
 
-    Aiming flexibility and good editorial experience, DM Editor provides settings and styles, but in the end it's the developer who knows the customer best and configure what to use, and more importantly what NOT to use. DM Editor's api ensures those settings are configurable.
+As a library, DM Editor aims for flexibility and good editorial experience. When it comes to project, the project developer controls everythings, since developer knows the customer best and configure what to use, and more importantly what NOT to use.
+
+DM Editor's api ensures enough configurations.
 
 ### Concept: widget
 
@@ -16,21 +22,57 @@ There are 3 types of widgets:
 - list: a container, eg. list, grid
 - mixed: eg. hero-text, layouts or other widet which consists of widget(s) and custom rendering.
 
-### Try to put style out of widget implementation
+### Concept: widget style
+
+Widget style is core concept of DM Editor. The idea behind is that widget focuses on function, widget styles focus on display theme. Most of time in a website, using style should cover most of design theme.
+
+!!! sample end "Sample: button styles"
+
+     A button can have size (small, medium), color (primary, secondary, etc), outline (fill/outline), round (no, small round, all round). All of those can be defined in button styles.
+
+     Button icon - before or after or both can be widget style also.
+
+Below is how it looks with styles (color and icon):
+
+<img src="../../assets/button-sample.png" width="560px">
+
+<br />
+
+Style (Color) selecting:
+
+<img src="../../assets/button-colors.png" width="250px">
+
+In addition, a widget style can set style settings (eg. padding) so editor can choose a style and adjust futher more in style settings.
+
+### Benefits of widget from component's pespective
+
+#### Visual way of adding component
+
+When using DM Editor, your component will be added in a visual way so editor can just see the result in edit mode.
+
+#### Component with settings and additional widget blocks
+
+If you already have a react component, you can simply wrap it into a widget. And sometimes there is a better way: wrap it into a widget, with possibility of mixing other widgets for configuration or display.
+
+A simple example is a form component, which is already done, but you want a form title or success/error message editable, then the form title/message can be a Heading or Text widget.
+
+### Widget development
+
+#### Put style out of widget implementation
 
 If the widget has potential to have different themes, then it's recommanded that only function related css stays in the widget, theme related css better to be in `widget style` - even if it's called `Default style`.
 
 Eg. Gallery, the image grid css can be in widget, while close button, previous, next can be in `widget style`.
 
-### Edit widget on left area or setting panel?
+#### Edit on left area or setting panel?
 
 Short answer is it depends. DM Editor tries to make good editorial experience, so it supports both or hybrid. In some widget like Form, it's better to use left area, but some widget like Gallery, it's better to add image on right.
 
-!!! info end "Tip: edit first"
+!!! info end "Tip: edit mode first"
 
     In general there is benefit of editing & viewing in one place: implement mainly edit, then view is easy - just render view part.
 
-Below is an example of Bridge play widget where it uses button on right to trigger edit mode.
+Below is an example of Bridge play widget where it uses button on right to trigger edit mode - it will be much mess if the whole edit mode is alway open.
 
 When select block:
 
@@ -44,31 +86,29 @@ Frontend:
 
 <img src="../../assets/widget-bridge-play-frontend.png" width="700px">
 
-### Concept: widget style
+### Project architecture
 
-Widget style is core concept of DM Editor. The idea behind is that widget focuses on function, widget styles focus on display theme. Most of time in a website, using style should cover most of design theme.
+#### use DM Editor in both content editing and layout editing?
 
-!!! sample end "Sample: button styles"
+Since DM Editor can be embeded to a page, and DM Editor can embed other blocks into, page editing, page design, layout making can all be done in DM Editor - the limit is up to widget/style.
 
-     A button can have size (small, medium), color (primary, secondary, etc), outline (fill/outline), round (no, small round, all round). All of those can be defined in button styles.
+Here are typical senarios of using DM Editor:
 
-     Button icon - before or after or both can be widget style also.
+1. Edit an article or page with input data.
+2. Edit a page with section menu. You will need layout widget like "section menu", where you can bind data source from other pages. In this case DM Editor handles page's section menu route automatically. Eg. a "About us" page with section menu: "About", "History", "Contact".
+3. Edit whole site layout. You need widgets for site menus, main area, footer etc. In this case you will need to map route to DM Editor since "Main area" widget will handle all pages. Most of time layout is in the project, so this way is not needed, but it's possible and this way gets benefit of editing footer/header in DM Editor. Note it should be only administator doing this.
 
-There are 2 types of styles: predefined and categorized. Predefined style is like: "project button" where all the size, color, outline, round are included. Categorized style is like above's size, color, outline, round. Try to use categorized style unless you are sure editor doesn't need flexibility of other style categories.
+!!! info end "Tip: both news list and news detail can be DM Editor pages"
 
-Below is how it looks with categorized styles (color and icon):
+    A news list page can be just a static DM Editor page, with NewsList widget inside.
 
-<img src="../../assets/button-sample.png" width="600px">
+    A news detail page can be a static DM Editor page with News Detail widget inside, while fetching data is done in the widget.
 
-<br />
+!!! info end "Tip: Benefit of putting News Detail into DM Editor"
 
-Categorized style (Color) selecting:
+    Comparing to routing to news detail directly: Editor/Administrator can set option visually or add more info, eg. adding general message above, then it affect all the news detail.
 
-<img src="../../assets/button-colors.png" width="300px">
-
-In addition, a widget style can set style settings (eg. padding) so editor can choose a style and adjust futher more in style settings.
-
-### Share widgets between admin and frontend
+#### Share code between admin and frontend
 
 It's recommanded to share common DM Editor code between frontend (eg. a nextjs project) and admin project - monorepo. Otherwise you will need to copy code between the 2 projects.
 

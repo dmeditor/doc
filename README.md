@@ -31,11 +31,11 @@ const App = () => {
 };
 ```
 
-Check [sample project](https://github.com/dmeditor/dmeditor-sample/)
+Check [sample project code](https://github.com/dmeditor/dmeditor-sample/)
 
-## Concepts
+## Concepts & principles
 
-[DM Editor concepts](./tutorial/concepts.md) for some basic principles.
+[See DM Editor concepts & principle](./tutorial/concepts.md).
 
 ## Tutorial
 
