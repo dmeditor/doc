@@ -2,10 +2,9 @@
 
 ⚠️ Note: this documentation is still in making, final version should be ready before end of Nov 2024.
 
-[Simple Demo](https://demo.dmeditor.io)
-
 Useful resources:
 
+- [Simple Demo](https://demo.dmeditor.io)
 - [Github Repo](https://github.com/dmeditor/dmeditor)
 - [Follow our roadmap](https://github.com/orgs/dmeditor/projects/1)
 - [Discussions on Github](https://github.com/dmeditor/dmeditor/discussions)
@@ -32,17 +31,13 @@ const App = () => {
 };
 ```
 
-## Sample projects
+Check [sample project](https://github.com/dmeditor/dmeditor-sample/)
 
-[Sample project](https://github.com/dmeditor/dmeditor-sample/)
+## Concepts
 
-## Documentation overview
+[DM Editor concepts](./tutorial/concepts.md) for some basic principles.
 
-### Tutorial
-
-Concept
-
-- [DM Editor concepts](./tutorial/concepts.md)
+## Tutorial
 
 Use DM Editor
 
@@ -60,7 +55,7 @@ Integration
 
 - [Integration for assets, saving block](./tutorial/integration.md)
 
-### API Reference
+## API Reference
 
 #### Use DM Editor in project
 
