@@ -9,6 +9,10 @@ Useful resources:
 - [Follow our roadmap](https://github.com/orgs/dmeditor/projects/1)
 - [Discussions on Github](https://github.com/dmeditor/dmeditor/discussions)
 
+## Concepts & principles
+
+See [DM Editor concepts & principles](./tutorial/concepts.md) to understand and use DM Editor better.
+
 ## Installation
 
 ```shell
@@ -32,10 +36,6 @@ const App = () => {
 ```
 
 Check [sample project code](https://github.com/dmeditor/dmeditor-sample/)
-
-## Concepts & principles
-
-[See DM Editor concepts & principle](./tutorial/concepts.md).
 
 ## Tutorial
 

@@ -6,9 +6,9 @@ This article explains some concepts and priciple of using DM Editor and extendin
 
     The idea behind DM Editor is to have an editor where it is easy to develop and style widget within React ecosystem, in the end together with developer bring good user experience for page editing.
 
-### Developer centered
+### Developer controls
 
-As a library, DM Editor aims for flexibility and good editorial experience. When it comes to project, the project developer controls everythings, since developer knows the customer best and configure what to use, and more importantly what NOT to use.
+While DM Editor aims for flexibility and good editorial experience, when it comes to project, the project developer takes main controls, since developer knows the customer best and configure what to use, and also what NOT to use.
 
 DM Editor's api ensures enough configurations.
 
@@ -58,7 +58,7 @@ A simple example is a form component, which is already done, but you want a form
 
 ### Widget development
 
-#### Put style out of widget implementation
+#### Put css style out of widget implementation
 
 If the widget has potential to have different themes, then it's recommanded that only function related css stays in the widget, theme related css better to be in `widget style` - even if it's called `Default style`.
 
@@ -68,9 +68,11 @@ Eg. Gallery, the image grid css can be in widget, while close button, previous, 
 
 Short answer is it depends. DM Editor tries to make good editorial experience, so it supports both or hybrid. In some widget like Form, it's better to use left area, but some widget like Gallery, it's better to add image on right.
 
-!!! info end "Tip: edit mode first"
+!!! tip "Edit first when implementing widget"
 
-    In general there is benefit of editing & viewing in one place: implement mainly edit, then view is easy - just render view part.
+    Edit first is good principle - when implementing editing, also implement view (backend view/preview), then the same view will be used in frontend.
+
+    In addition, you only need to use admin in dev mode, the frontend will look the same.
 
 Below is an example of Bridge play widget where it uses button on right to trigger edit mode - it will be much mess if the whole edit mode is alway open.
 
@@ -88,7 +90,7 @@ Frontend:
 
 ### Project architecture
 
-#### use DM Editor in both content editing and layout editing?
+#### Use DM Editor in both editing and layout editing?
 
 Since DM Editor can be embeded to a page, and DM Editor can embed other blocks into, page editing, page design, layout making can all be done in DM Editor - the limit is up to widget/style.
 
@@ -98,15 +100,34 @@ Here are typical senarios of using DM Editor:
 2. Edit a page with section menu. You will need layout widget like "section menu", where you can bind data source from other pages. In this case DM Editor handles page's section menu route automatically. Eg. a "About us" page with section menu: "About", "History", "Contact".
 3. Edit whole site layout. You need widgets for site menus, main area, footer etc. In this case you will need to map route to DM Editor since "Main area" widget will handle all pages. Most of time layout is in the project, so this way is not needed, but it's possible and this way gets benefit of editing footer/header in DM Editor. Note it should be only administator doing this.
 
-!!! info end "Tip: both news list and news detail can be DM Editor pages"
+!!! tip "Tip: both news list and news detail can be DM Editor pages"
 
     A news list page can be just a static DM Editor page, with NewsList widget inside.
 
     A news detail page can be a static DM Editor page with News Detail widget inside, while fetching data is done in the widget.
 
-!!! info end "Tip: Benefit of putting News Detail into DM Editor"
+!!! tip "Tip: Benefit of putting News Detail into DM Editor"
 
     Comparing to routing to news detail directly: Editor/Administrator can set option visually or add more info, eg. adding general message above, then it affect all the news detail.
+
+#### Tune editor's styling ability
+
+DM Editor gives lots of style freedom to editor. For example,
+
+- Almost all widgets have common style settings (can be disabled) like: background color, padding, margin top, self align, width.
+
+- DM Editor has layout widget like 2 columns layout, Grid, List container, so editor can add lots of levels inside, eg. 3 columns layout -> 2 columns layout -> left image right text
+
+This "too much" freedom in general gives flexiblity, but sometimes can create bad design. There are some ways to help:
+
+- Configure default styles, so when a widget is added, default style is set (eg. heading's top margin).
+- Disable some unneeded general style settings.
+- Predefine colors, like text color, background color, default color.
+- Save predefined blocks so editor can use directly.
+
+!!! tip
+
+    Make some guidline of UI, like color, padding, font size, etc (with samples) for editors. Of course, close work between designer and editor is always the best way.
 
 #### Share code between admin and frontend
 
