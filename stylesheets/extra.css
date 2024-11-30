@@ -1,6 +1,7 @@
 :root{
-  --md-primary-fg-color: #333333;
+  --md-primary-fg-color: #282a35;
   --md-typeset-a-color: #005ac6;
+  --md-text-font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .md-nav{

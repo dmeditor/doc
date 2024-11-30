@@ -2,12 +2,11 @@
 
 ⚠️ Note: this documentation is still in making, final version should be ready before end of Nov 2024.
 
-
 [Simple Demo](https://demo.dmeditor.io)
 
 Useful resources:
 
-- [Github Repo](https://github.com/dmeditor/dmeditor/dmeditor)
+- [Github Repo](https://github.com/dmeditor/dmeditor)
 - [Follow our roadmap](https://github.com/orgs/dmeditor/projects/1)
 - [Discussions on Github](https://github.com/dmeditor/dmeditor/discussions)
 
@@ -41,18 +40,25 @@ const App = () => {
 
 ### Tutorial
 
-####
+Concept
 
-| Category       | Link                                                          | Comment                                                                                                 |
-| -------------- | ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| Concepts       | [DM Editor concepts](./tutorial/concepts.md)                  | Basic concepts of DM Editor                                                                             |
-| Use DM Editor  | [Use DM Editor in editing](./tutorial/use-dmeditor.md)           | For editing                                                                                             |
-|                | DM Editor view in [client side](./tutorial/use-dmeditor-view.md), [SSR](./tutorial/ssr.md)     | Render page in client or SSR or both.                                                                    |
-| Develop widget | [Make a widget](./tutorial/how-to-make-widget.md)             |                                                                                                         |
-|                | [Make a mixed widget](./tutorial/how-to-make-mixed-widget.md) | Mixed widget is a widget containing other widgets                                                       |
-|                | [Style a widget](./tutorial/How-to-make-a-widget-style.md)    | You can use css-in-js or utility way to style widget (eg. tailwind)                                     |
-|   Integration             | [Integration for assets, saving block](./tutorial/integration.md)           | Integration with your project or CMS, eg. set project style, browse image, link, save blocks |
+- [DM Editor concepts](./tutorial/concepts.md)
 
+Use DM Editor
+
+- [Edit in DM Editor](./tutorial/use-dmeditor.md)
+- [View DM Editor data](./tutorial/use-dmeditor-view.md)
+- [SSR](./tutorial/ssr.md)
+
+Develop a widget
+
+- [Make a widget](./tutorial/how-to-make-widget.md)
+- [Make a mixed widget](./tutorial/how-to-make-mixed-widget.md)
+- [Style a widget](./tutorial/How-to-make-a-widget-style.md)
+
+Integration
+
+- [Integration for assets, saving block](./tutorial/integration.md)
 
 ### API Reference
 
@@ -74,7 +80,7 @@ const App = () => {
 | Setting components    | [setting components](./reference/setting-components.md) |         |
 | Widget style          | [Widget style keys](./reference/widget-style-keys.md)   |         |
 | Utility               | [Utility components](./reference/utility.md)            |         |
-| util               | [util functions](./reference/utils.md)            |         |
+| util                  | [util functions](./reference/utils.md)                  |         |
 
 #### Data
 
