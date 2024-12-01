@@ -1,7 +1,5 @@
 # DM Editor documentation
 
-⚠️ Note: this documentation is still in making, final version should be ready before end of Nov 2024.
-
 Useful resources:
 
 - [Simple Demo](https://demo.dmeditor.io)
@@ -11,7 +9,7 @@ Useful resources:
 
 ## Concepts & principles
 
-See [DM Editor concepts & principles](./tutorial/concepts.md) to understand and use DM Editor better.
+See [DM Editor concepts and principles](./tutorial/concepts.md) to use DM Editor better.
 
 ## Installation
 

@@ -6,7 +6,7 @@ This article explains some concepts and priciple of using DM Editor and extendin
 
     The idea behind DM Editor is to have an editor where it is easy to develop and style widget within React ecosystem, in the end together with developer bring good user experience for page editing.
 
-### Developer controls
+### Principle: developer controls
 
 While DM Editor aims for flexibility and good editorial experience, when it comes to project, the project developer takes main controls, since developer knows the customer best and configure what to use, and also what NOT to use.
 
@@ -44,11 +44,11 @@ Style (Color) selecting:
 
 In addition, a widget style can set style settings (eg. padding) so editor can choose a style and adjust futher more in style settings.
 
-### Benefits of widget from component's pespective
+### Benefits of widget way from component's pespective
 
 #### Visual way of adding component
 
-When using DM Editor, your component will be added in a visual way so editor can just see the result in edit mode.
+When using DM Editor, the component will be added in a visual way so editor can just see the result in edit mode.
 
 #### Component with settings and additional widget blocks
 
@@ -90,7 +90,7 @@ Frontend:
 
 ### Project architecture
 
-#### Use DM Editor in both editing and layout editing?
+#### Use DM Editor in both content and layout editing?
 
 Since DM Editor can be embeded to a page, and DM Editor can embed other blocks into, page editing, page design, layout making can all be done in DM Editor - the limit is up to widget/style.
 
