@@ -29,29 +29,28 @@ A definition defines 'meta data' of a widget, and other information like setting
   // Name of the widget
   name: 'Heading',
 
-  // Type of the widget, unique identifier for this widget.
+  // Identifier of the widget, unique identifier for this widget.
   // Only allow small case, -, numbers, starting from letter
   type: 'heading',
   category: 'basic',
   icon: 'TextFormatOutlined',
+  widgetType: "widget",
   settings: [
         {
           name: 'Background Color',
           settingComponent: 'color',
           category: 'style',
-          property: 'settings.backgroundColor',
+          property: '.settings.backgroundColor',
         },
         {
           name: 'Width',
-          settingComponent: 'setting_input',
+          settingComponent: 'input',
           category: 'style',
-          property: 'settings.width',
+          property: '.settings.width',
         },
       ],
 }
 ```
-
-Note: `setting_input` is a customized setting component, see [Customized setting](#4-customized-setting) for implementation.
 
 See our [definition reference](../reference/widget.md) for full properties and explaination.
 
@@ -124,37 +123,32 @@ registerWidget(
 )
 ```
 
-### 5. Customized setting
+### 5. RenderToSetting
 
-Implementation:
+!!! note
+
+    This feature is available after 0.2.1.
+
+You can use `RenderToSetting` so that the setting is implemented in the render, but shown in setting panel:
 
 ```javascript
-const SettingInput = (props: DME.SettingComponentProps) => {
-  const { property, value } = props;
-  const { getSelectedBlock, updateSelectedBlockProps } = useEditorStore();
+const SampleWidget = (props) => {
 
   //Get block data
   const blockData = getSelectedBlock<EntitySampleWidget>();
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    //update data with dynamic property
-    updateSelectedBlockProps(property, e.target.value);
+      //update block value
   };
 
   return (
     <div>
-      <TextField onChange={handleChange} value={value} />
-      {/* Show background color instead */}
-      Color: {blockData?.data.settings.backgroundColor}
+      <RenderToSetting>
+        <TextField onChange={handleChange} value={value} />
+      </RenderToSetting>
     </div>
   );
 };
-```
-
-Registration the setting component:
-
-```javascript
-registerSettingComponent("setting_input", SettingInput);
 ```
 
 ### 6. SSR data fetching
@@ -170,6 +164,7 @@ const onServerLoad = async (blockData, context)=>{
     fetch('/api/image/'+imageID).then((res)=>res.json()).then((data)=>{
       blockData.url = data.url;
     })
+    blockData.serverData = true;
 }
 
 registerWidget(

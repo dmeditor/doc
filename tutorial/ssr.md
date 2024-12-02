@@ -2,7 +2,7 @@
 
 Using DM Editor viewing in SSR is same as [View DM Editor](../use-dmeditor#view-dm-editor-data), just need some extra work: prefetch data.
 
-!!! sample "Some widgets needs prefetch"
+!!! sample "Some widgets need prefetch"
 
     For example in NewsList widget, the news list data needs to be fetched before page is loaded and it should be on server-side-fetch and widget can render on first visit, then SSO can work.
 

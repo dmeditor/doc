@@ -44,17 +44,15 @@ Samples:
 Use DM Editor
 
 - [Use DM Editor for edit and view](./tutorial/use-dmeditor.md)
+- [DM Editor configuration to customize editing and viewing](./tutorial/dmeditor-configuration.md)
 - [SSR prefetch](./tutorial/ssr.md)
+- [Assets integration, saving block](./tutorial/integration.md)
 
 Develop a widget
 
 - [Make a widget](./tutorial/how-to-make-widget.md)
 - [Make a mixed widget](./tutorial/how-to-make-mixed-widget.md)
 - [Style a widget](./tutorial/How-to-make-a-widget-style.md)
-
-Integration
-
-- [Integration for assets, saving block](./tutorial/integration.md)
 
 ## API Reference
 

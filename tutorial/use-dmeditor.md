@@ -5,10 +5,12 @@ You can use DM Editor for edit in admin site and view in admin and frontend.
 Below is a sample code of loading and saving data in DM Editor.
 
 ```typescript
-import {registerDefaultWidgets, DMEData, DMEditor, DMEditorRefType} from 'dmeditor';
+import {registerDefaultWidgets, setDMEditorConfig, DMEData, DMEditor, DMEditorRefType} from 'dmeditor';
 
+//Note: it's a good practise to put initialization to a separate file. eg. initDMEditor.ts
+registerDefaultWidgets();
+setDMEditorConfig({});
 
-registerDefaultWidgets(); //note: it's a good practise to put initialization to a separate file. eg. initDMEditor.ts
 
 export App = ()=>{
   const editorRef = useRef<DMEditorRefType>(null);
@@ -130,10 +132,11 @@ Here is an example of viewing DM Editor data - just use component `DMEditorView`
 
 ```typescript
 
-import {registerDefaultWidgets, DMEditorView} from 'dmeditor';
+import {registerDefaultWidgets, setDMEditorConfig, DMEditorView} from 'dmeditor';
 
-
-registerDefaultWidgets(); //Note: it's a good practise to put initialization to a separate file. eg. initDMEditor.ts
+//Note: it's a good practise to put initialization to a separate file. eg. initDMEditor.ts
+registerDefaultWidgets();
+setDMEditorConfig({});
 
 export const View = ()=>{
    const data = [[
