@@ -6,11 +6,11 @@ setDMEditorConfig({});
 
 ## For edit and view
 
-### Handle image
+### Fetch image with size
 
 This is related to image handling. It's recommanded to store relative path and use image handling to get real image.
 
-See [intergration](../integration) about how to save image
+See [intergration](../integration) about how to an image is choosen and path is saved.
 
 ```javascript
  {

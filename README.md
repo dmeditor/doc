@@ -46,7 +46,7 @@ Use DM Editor
 - [Use DM Editor for edit and view](./tutorial/use-dmeditor.md)
 - [DM Editor configuration to customize editing and viewing](./tutorial/dmeditor-configuration.md)
 - [SSR prefetch](./tutorial/ssr.md)
-- [Assets integration, saving block](./tutorial/integration.md)
+- [System integration, like image browsing, saving block](./tutorial/integration.md)
 
 Develop a widget
 
