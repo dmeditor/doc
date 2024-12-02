@@ -1,73 +1,62 @@
+## Introduction
 
-SSR
-=========
+Using DM Editor viewing in SSR is same as [View DM Editor](../use-dmeditor#view-dm-editor-data), just need some extra work: prefetch data.
 
-## SSR
+!!! sample "Some widgets needs prefetch"
 
-SSR is similar to [DM Editor for view](use-dmeditor-view), but with prefetched data.
+    For example in NewsList widget, the news list data needs to be fetched before page is loaded and it should be on server-side-fetch and widget can render on first visit, then SSO can work.
 
-### NextJS
-Check out nextjs [sample project](./#) .
+## Prefetch sample
 
-
-### Invoke server load for each widget
-
-Below code will iterate all widgets of this page and invoke `onServerSideLoad` of those widgets.
+Below code in NextJS iterates all widgets of this page and invoke `dmeServerSideLoad` of those widgets.
 
 ```javascript
+import { dmeServerSideLoad } from "dmeditor";
 
-import {dmeServerSideLoad } from "dmeditor";
-
-const body = content.body;
-
-await dmeServerSideLoad( body || [], context );
+export async function getServerSideProps(context) {
+  // Get current content
+  const body = content.body; //body stores dmeditor data as js object
+  try {
+    await dmeServerSideLoad(body || [], context);
+  } catch (err) {
+    //handle error
+  }
+  // ...
+  // Set object to page props
+}
 ```
 
-### Widget onServerSideLoad
+`dmeServerSideLoad` invokes all widget's `onServerSideLoad` using concurrency way.
 
+## Parameter to widget when prefetching
 
-### Tailwind
-Tailwind's utility based approache gives high performance and good resuse of styles, thus is a very good match for DM Editor.
+`dmeServerSideLoad` has second parameter, which will be passed to widget. In nextjs it's can be `context`, or merged context object, eg `{...context, siteName: siteName }`
 
-Put below in global css so some widget's full width can work (eg. nextjs+tailwind's globals.css): 
+Below is an example of NewsList widget's `onServerSideLoad`
 
-```css
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+```javascript
+const onServerSideLoad = async (existingData, { query }) => {
+  //get pagination from context's query
+  let page = query.page ? parseInt(query.page) : 1;
 
-:root{
-    --dme-container-width: 100vw;
-}
+  //get limit from settings
+  const limit = existingData.data.settings.limit || 10;
+  let offset = (page - 1) * limit;
 
-/*optional to remove horizontal scrollbar*/
-body{
-    overflow-x: hidden;
-}
+  let bodyObj: any = `/*Fetch sql, graphql, etc*/`;
+  const { list, count } = await serverFetch(bodyObj);
 
-@media screen(md) {
-    :root{
-        --dme-main-width: theme(screens.md);
-    }
-}
-
-@media screen(lg) {
-    :root{
-        --dme-main-width: theme(screens.lg);
-    }
-}
-
-@media screen(xl) {
-    :root{
-      --dme-main-width: theme(screens.xl);
-    }
-}
-
-
-@media screen(2xl) {
-    :root{
-        --dme-main-width: theme(screens.2xl);
-    }
-}
-
+  //update widget data
+  existingData.data = {
+    ...existingData.data,
+    list: list,
+    count: count,
+    page: page,
+  };
+  existingData.serverData = true;
+};
 ```
+
+## NextJS
+
+Check out nextjs [sample project](https://github.com/dmeditor/dmeditor-server) .

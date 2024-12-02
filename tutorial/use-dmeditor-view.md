@@ -1,7 +1,6 @@
-Use DM Editor for view
-=========
+## Sample code
 
-## DMEditorView
+Here is an example of viewing DM Editor data - just use component `DMEditorView`
 
 ```typescript
 
@@ -29,3 +28,13 @@ export const View = ()=>{
 }
 
 ```
+
+### Use cases
+
+It can be used for viewing in admin and frontend.
+
+!!! note SSR
+
+    For SSR you will need additional api, which fetches data for widget which needs dynamic data before page is loaded. eg. a NewsList widget should fetch list data first in this case.
+
+    See [SSR](./ssr) for more

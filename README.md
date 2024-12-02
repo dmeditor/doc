@@ -33,15 +33,18 @@ const App = () => {
 };
 ```
 
-Check [sample project code](https://github.com/dmeditor/dmeditor-sample/)
+Samples:
+
+- [Sample project](https://github.com/dmeditor/dmeditor-sample/)
+- [Nextjs sample](https://github.com/dmeditor/dmeditor-server/)
+- Monorepo sample(on the way)
 
 ## Tutorial
 
 Use DM Editor
 
-- [Edit in DM Editor](./tutorial/use-dmeditor.md)
-- [View DM Editor data](./tutorial/use-dmeditor-view.md)
-- [SSR](./tutorial/ssr.md)
+- [Use DM Editor for edit and view](./tutorial/use-dmeditor.md)
+- [SSR prefetch](./tutorial/ssr.md)
 
 Develop a widget
 
