@@ -56,7 +56,7 @@ Develop a widget
 
 ## API Reference
 
-#### Use DM Editor in project
+#### Use DM Editor
 
 | API                                                     | Comment                                     |
 | ------------------------------------------------------- | ------------------------------------------- |
@@ -71,8 +71,8 @@ Develop a widget
 | ------------------------------------------------------- | -------------------------------------------------------------- |
 | [registerWidget](./reference/widget.md)                 | Register a widget                                              |
 | [registerStyle](./reference/styles.md)                  | Resister style, style options                                  |
-| [Hooks](./tutorial/hooks.md)                            | useEditorStore, useDevice                                      |
-| [setting components](./reference/setting-components.md) | Setting component like input, checkbox, width, etc             |
+| [Hooks](./reference/hooks.md)                           | useEditorStore, useDevice                                      |
+| [Setting components](./reference/setting-components.md) | Setting component like input, checkbox, width, etc             |
 | [Widget style keys](./reference/widget-style-keys.md)   | Style keys on built in widgets                                 |
 | [Utility components](./reference/utility.md)            | Utility component useful for creatint widget, eg. MiniRichText |
 | [util functions](./reference/utils.md)                  | Util functions like converting json data to html               |
