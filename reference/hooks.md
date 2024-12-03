@@ -5,8 +5,8 @@
 ### selected block information
 
 ### Data manipulation
-#### getSelectedBlock
 
+#### getSelectedBlock
 
 #### updateSelectedBlock
 
@@ -14,9 +14,8 @@
 
 #### updateSelectedBlockData
 
-
-
-
 ### Add block
 
 ### addBlockData
+
+## Hook useDevice

@@ -33,11 +33,11 @@ const App = () => {
 };
 ```
 
-Samples:
+Sample projects:
 
-- [Sample project](https://github.com/dmeditor/dmeditor-sample/)
+- [React project](https://github.com/dmeditor/dmeditor-sample/)
 - [Nextjs sample](https://github.com/dmeditor/dmeditor-server/)
-- Monorepo sample(on the way)
+- Monorepo sample (on the way)
 
 ## Tutorial
 
@@ -50,41 +50,38 @@ Use DM Editor
 
 Develop a widget
 
-- [Make a widget](./tutorial/how-to-make-widget.md)
-- [Make a mixed widget](./tutorial/how-to-make-mixed-widget.md)
+- [Make a basic widget](./tutorial/how-to-make-widget.md)
+- [Make a mixed widget with other widget(s) inside](./tutorial/how-to-make-mixed-widget.md)
 - [Style a widget](./tutorial/How-to-make-a-widget-style.md)
 
 ## API Reference
 
 #### Use DM Editor in project
 
-| Category                | API                                                                   | Comment                              |
-| ----------------------- | --------------------------------------------------------------------- | ------------------------------------ |
-| Use DM Editor           | [DMEditor, DMEditorView & dmeServerSideLoad](./reference/dmeditor.md) |                                      |
-| Configuration           | [setDMEditorConfig](./reference/configuration.md)                     |                                      |
-| Configuration callbacks | [Callbacks](./reference/callbacks.md)                                 | Eg. for integrate with image library |
-| DM Editor css variables | [CSS variables](./reference/css-variables.md)                         |                                      |
+| API                                                     | Comment                                     |
+| ------------------------------------------------------- | ------------------------------------------- |
+| [DMEditor](./reference/dmeditor.md)                     | DMEditor, DMEditorView, dmeServerSideLoad   |
+| [setDMEditorConfig](./reference/configuration.md)       | Set configurations like predefined colors   |
+| [Callback configs](./reference/callbacks.md)            | Eg. for integrate with image library        |
+| [CSS variables & classes](./reference/css-variables.md) | DM Editor defined css variables and classes |
 
-#### Develop widget
+#### Develop widget and style
 
-| Category              | API                                                     | Comment |
-| --------------------- | ------------------------------------------------------- | ------- |
-| Widget implementation | [registerWidget](./reference/widget.md)                 |         |
-| State management      | [Hook useEditorStore](./tutorial/useEditorStore.md)     |         |
-| Setting components    | [setting components](./reference/setting-components.md) |         |
-| Widget style          | [Widget style keys](./reference/widget-style-keys.md)   |         |
-| Utility               | [Utility components](./reference/utility.md)            |         |
-| util                  | [util functions](./reference/utils.md)                  |         |
+| API                                                     | Comment                                                        |
+| ------------------------------------------------------- | -------------------------------------------------------------- |
+| [registerWidget](./reference/widget.md)                 | Register a widget                                              |
+| [registerStyle](./reference/styles.md)                  | Resister style, style options                                  |
+| [Hooks](./tutorial/hooks.md)                            | useEditorStore, useDevice                                      |
+| [setting components](./reference/setting-components.md) | Setting component like input, checkbox, width, etc             |
+| [Widget style keys](./reference/widget-style-keys.md)   | Style keys on built in widgets                                 |
+| [Utility components](./reference/utility.md)            | Utility component useful for creatint widget, eg. MiniRichText |
+| [util functions](./reference/utils.md)                  | Util functions like converting json data to html               |
 
-#### Data
+## Extra resources
 
-| Category    | API                | Comment |
-| ----------- | ------------------ | ------- |
-| Data format | [Data format](./#) |         |
+Code as default settings/styles in project.
 
-### Resources
-
-| Category                | API           | Comment                                |
-| ----------------------- | ------------- | -------------------------------------- |
-| Default styles          | [Styles](./#) | Built in widget styles using css-in-js |
-| Default tailwind styles | [Styles](./#) | Built in widget styles using tailwind  |
+|                         | Comment                                |
+| ----------------------- | -------------------------------------- |
+| Default styles          | Built in widget styles using css-in-js |
+| Default tailwind styles | Built in widget styles using tailwind  |
