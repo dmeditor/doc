@@ -5,7 +5,7 @@
 | align        | Align left, center, right                                                   |                                                                                          |
 | button-group | Buttons as group                                                            | `{ options: Array<{ text: string, value: string }> };`                                   |
 | checkbox     | Checkbox                                                                    |                                                                                          |
-| color        | Color                                                                       | `{colorGroup:string, colors:Array<{color:string, name?:string}>} `                       |
+| color        | Color                                                                       | `{colorGroup?:string, colors?:Array<{color:string, name?:string}>} `                     |
 | image        | Image with browse button                                                    |                                                                                          |
 | input        | Text input                                                                  | `{updateOnUnfocus?:boolean}`                                                             |
 | link         | Link with browse button                                                     | `{urlOnly?:boolean}`                                                                     |

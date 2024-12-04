@@ -56,7 +56,7 @@ setDMEditorCallback({
 
 Plan to come in 0.2.1
 
-## Blocks
+## Saved blocks
 
 It's useful for editor to save blocks and reuse them. They can be saved to project database, or a centeralized place crossing projects (just make sure widgets/styles are there).
 

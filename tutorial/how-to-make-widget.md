@@ -63,6 +63,9 @@ export interface EntitySampleWidget {
   settings: {
     width: number,
     backgroundColor?: string,
+
+    // add below if you want to use general settings like padding, margi to top, etc
+    // general?:DMEData.GeneralSettingType;
   };
 }
 ```

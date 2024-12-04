@@ -57,6 +57,8 @@ const onServerSideLoad = async (existingData, { query }) => {
 };
 ```
 
+See widget's [SSR Data fetching](../how-to-make-widget/#6-ssr-data-fetching)
+
 ## NextJS
 
 Check out nextjs [sample project](https://github.com/dmeditor/dmeditor-server) .

@@ -8,7 +8,7 @@ setDMEditorConfig({});
 
 ### Fetch image with size
 
-This is related to image handling. It's recommanded to store relative path and use image handling to get real image.
+This is related to image handling. It's practical use store image relative path and use image handling to get real image url with proper sizes when display.
 
 See [intergration](../integration) about how to an image is choosen and path is saved.
 

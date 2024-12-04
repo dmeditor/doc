@@ -2,7 +2,6 @@
 
 A mixed widget is widget containing other widget. Besides following [making a widget](./how-to-make-widget.md), there are extra configuration regarding child rendering and widget setting.
 
-
 ### Mixed widget data
 
 It's recommaned to put all children blocks under property 'children', eg. Here is data example for Hero Text, where there is image on left and list on right.
@@ -46,6 +45,7 @@ It's recommaned to put all children blocks under property 'children', eg. Here i
 ```
 
 #### `isEmbed` should be `true` or `false`?
+
 isEmbed should be true unless the parent is an gloabl container, eg. (a tab, an accordtion item) - some of container is embed also - eg. heading inside list of hero text. In general, if you want the element has no relation from the mixed widget(eg. element under a tab), it can be false, otherwise alway set to true, or if you want to treat the block part of the mixed widget or not.
 
 DM Editor will automatically set `isEmbed` true if it's parent `list` widget is `true`.
@@ -62,10 +62,14 @@ There are 2 components which can be used for rendering children:
 
 In most cases `BlockRender` is good enough. If you want to render a list directly(not using `list` widget), you can use `BlockListRender`. Eg. In Tabs/Accordion, a tab/accordion item can use `BlockListRender` to avoid unncessary `list` block as parent for content blocks in a tab.
 
+See [BlockRender & BlockListRender](../../reference/block-render) for detail.
+
 ### Children configuration
+
 Mixed widget can control's embeded children's settings and styles.
 
 In definition of the mixed widget, you can set rules by impelmenting below
+
 ```javascript
 embedConfig?: {
         enabledSettings?: (
@@ -80,7 +84,6 @@ embedConfig?: {
 ```
 
 Below example set only showing 'container' setting of image and list, and disable all styles dropdown of image and list. At same time, for all children under 'list', use it's own setting panel instead of embeded setting panel.
-
 
 ```javascript
 embedConfig: {

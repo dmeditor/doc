@@ -44,7 +44,7 @@ Sample projects:
 Use DM Editor
 
 - [Use DM Editor for edit and view](./tutorial/use-dmeditor.md)
-- [DM Editor configuration to customize editing and viewing](./tutorial/dmeditor-configuration.md)
+- [Edit/view configuration](./tutorial/dmeditor-configuration.md)
 - [SSR prefetch](./tutorial/ssr.md)
 - [System integration, like image browsing, saving block](./tutorial/integration.md)
 
@@ -70,8 +70,9 @@ Develop a widget
 | API                                                     | Comment                                                        |
 | ------------------------------------------------------- | -------------------------------------------------------------- |
 | [registerWidget](./reference/widget.md)                 | Register a widget                                              |
-| [registerStyle](./reference/styles.md)                  | Resister style, style options                                  |
+| [registerStyle](./reference/styles.md)                  | Register style, style options                                  |
 | [Hooks](./reference/hooks.md)                           | useEditorStore, useDevice                                      |
+| [Render block, block list](./reference/block-render.md) | BlockRender, BlockListRender                                   |
 | [Setting components](./reference/setting-components.md) | Setting component like input, checkbox, width, etc             |
 | [Widget style keys](./reference/widget-style-keys.md)   | Style keys on built in widgets                                 |
 | [Utility components](./reference/utility.md)            | Utility component useful for creatint widget, eg. MiniRichText |
