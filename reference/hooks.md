@@ -10,6 +10,8 @@
 
 #### updateSelectedBlock
 
+#### updatePropsByPath
+
 #### updateSelectedBlockValue
 
 #### updateSelectedBlockData

@@ -21,4 +21,4 @@ A style key is defined by structual widgets used in widget styles. Eg. in table 
 
 Common key: `root` - the root element of a widget
 
-Since number of widgets are changing, see each [widgets](https://dmeditor.io/widgets) for widge style keys.
+Since number of widgets is changing, see each [widgets](https://dmeditor.io/widgets) for widge style keys.

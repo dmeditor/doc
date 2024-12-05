@@ -135,7 +135,7 @@ It's recommanded to share common DM Editor code between frontend (eg. a nextjs p
 
 The code includes below:
 
-- Initial code
+- Initialzation code
 - Widgets
 - Styles
 - Project styles

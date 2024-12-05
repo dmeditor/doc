@@ -1,6 +1,23 @@
-# Widget definition & registration reference
+registerWidget registers a widget to DM Editor.
 
-## Definition
+## registerWidget
+
+```typescript
+registerWidget(
+   def: DME.Widget,
+   {render: ComponentType,
+    onServerSideLoad?: (data: DMEData.Block, parameters: any) => Promise<void>
+   }
+);
+```
+
+| Name             | Type                                                 | Required | Description                                                                         | Comment               |
+| ---------------- | ---------------------------------------------------- | -------- | ----------------------------------------------------------------------------------- | --------------------- |
+| def              | `DME.Widget`                                         | `true`   | Definition of a widget                                                              |                       |
+| render           | `render component`                                   | `true`   | The render implemenation of a widget                                                |                       |
+| onServerSideLoad | `(data: DMEData.Block, serverParameters: any)=>void` | `false`  | Implemention of server side load before using DMEditorView or just data converting. | Used typically in SSR |
+
+## Widget definition (DME.Widget)
 
 | Name       | Type                        | Required | Description                                                                                                          | Comment                                                 |
 | ---------- | --------------------------- | -------- | -------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------- |
@@ -28,18 +45,44 @@
 | ----------- | -------------- | -------- | -------------------------------------------------------------------------------------------------- | ------- |
 | createBlock | () => `object` | true     | Invoked when creating this widget's block. Need to return an entity object(defined in `entity.ts`) |         |
 
-## Register widget
+## render
 
-### registerWidget
+`render` is a typical react component, and implement the render logic of widget, where edit and view are inside.
 
-```javascript
-registerWidget(<widget definition object>,
-   {render: <widget render component>,
-    onServerSideLoad: <server side load function>
-   })
+It uses props [WidgetRenderProps](./widget-render-props.md).
+
+```typescript
+//registerWidget(def, { render: Image });
+
+export const Image = (props: DME.WidgetRenderProps<ImageEntity>) => {
+  const { blockNode, styleClasses } = props;
+  const {
+    data: { src, settings, description },
+  } = blockNode;
+
+  return (
+    <div>
+      <img src={dmeConfig.general.imagePath(src)} />
+    </div>
+  );
+};
 ```
 
-| Name             | Type                                                 | Required | Description                                                                         | Comment               |
-| ---------------- | ---------------------------------------------------- | -------- | ----------------------------------------------------------------------------------- | --------------------- |
-| render           | `render component`                                   | `true`   | The render implemenation of a widget                                                |                       |
-| onServerSideLoad | `(data: DMEData.Block, serverParameters: any)=>void` | `false`  | Implemention of server side load before using DMEditorView or just data converting. | Used typically in SSR |
+## onServerSideLoad
+
+onServerSideLoad is used in SSR. It's invoked before page is loaded.
+
+!!! note
+
+    Remember to set serverData `true` so the render can distiguish where the data is from.
+
+```typescript
+const onServerSideLoad = async (
+  blockData: DMEData.Block<NewsListEntity>,
+  parameters
+) => {
+  //fetch to list from server or remote server.
+  blockData.data.list = list;
+  blockData.serverData = true;
+};
+```
