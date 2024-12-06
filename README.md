@@ -29,8 +29,8 @@ const App = () => {
 ## Sample projects
 
 - [React project](https://github.com/dmeditor/dmeditor-sample/)
-- [Nextjs sample](https://github.com/dmeditor/dmeditor-server/)
-- Monorepo sample (on the way)
+- [Nextjs sample project](https://github.com/dmeditor/dmeditor-server/)
+- [Monorepo sample project](https://github.com/dmeditor/sample-monorepo/) where admin and front site use shared folder for same configuration and widgets.
 
 ## Tutorial
 
@@ -70,7 +70,6 @@ const App = () => {
 | [Render block, block list](./reference/block-render.md) | BlockRender, BlockListRender                                   |
 | [Setting components](./reference/setting-components.md) | Setting component like input, checkbox, width, etc             |
 | [Utility components](./reference/utility.md)            | Utility component useful for creatint widget, eg. MiniRichText |
-| [util functions](./reference/utils.md)                  | Util functions like converting json data to html               |
 
 ## Extra resources
 

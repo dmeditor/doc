@@ -75,7 +75,7 @@ Here is the structure:
  allowedTypes?: Array<string>; // Used for list/grid/mixed-widget.
  data: unknown; //defined in entity
  children: Array<{id:string, data:unknow, children:<unknown>}> //children create a tree structure
- editControl?: number; // Edit control values.
+ editControl?: number; // Edit control value.
 }
 ```
 

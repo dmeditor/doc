@@ -14,12 +14,11 @@ Here is example of using BlockRender to render a block:
 
 Here are properties:
 
-```typescript
-interface BlockRenderProps {
-  data: DMEData.Block;
-  path: Array<number>;
-  mode: DME.Mode; //'edit'|'view'
-```
+| Name | Type             | Required | Description |
+| ---- | ---------------- | -------- | ----------- |
+| data | `DMEData.Block`  | true     | Block data  |
+| path | `Array<number>`  | true     | Block path  |
+| mode | `'edit'\|'view'` | true     | Render mode |
 
 ## BlockListRender
 
@@ -31,13 +30,11 @@ BlockListRender renders a list of blocks (children).
 
 Here are properties:
 
-```typescript
-interface BlockListRenderProps {
-  blockData: DMEData.BlockList;
-  path: Array<number>;
-  allowedTypes?: string[] | string;
-  isEmbed?: boolean;
-  direction?: "vertical" | "horizontal"; //by default vertical.
-  mode: DME.Mode; //'edit'|'view'
-}
-```
+| Name         | Type                         | Required                             | Description                       |
+| ------------ | ---------------------------- | ------------------------------------ | --------------------------------- |
+| blockData    | `DMEData.BlockList`          | true                                 | Block list                        |
+| path         | `Array<number>`              | true                                 | Block path                        |
+| mode         | `'edit'\|'view'`             | true                                 |                                   |
+| allowedTypes | `string[] \| string`         | false                                | Allowed type when adding          |
+| isEmbed      | boolean                      | false                                | Is embeded. Used in mixed widget. |
+| direction    | `"vertical" \| "horizontal"` | By default vertical if not set.false |                                   |

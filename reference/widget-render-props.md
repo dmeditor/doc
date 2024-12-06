@@ -1,18 +1,13 @@
-WidgetRenderProps is the props type when rendering a widget, both in edit mode and view mode.
+WidgetRenderProps is the props type when implementing a widget render, both in edit mode and view mode.
 
 ## WidgetRenderProps with generics
 
-```typescript
-{
-  blockNode: DMEData.Block<WidgetEntityType, Node>; //See blockNode type below
-  rootClasses: string; //internal use
-  styleClasses: Record<string, string>; //style
-  active: boolean; // If the block is active. Always false in view mode.
-  mode: Mode; // 'edit'|'view'
-  path: number[]; // Block path under 'children', eg. [0,1,1]
-}
-
-```
+| Name         | Type                                    | Description                                             |
+| ------------ | --------------------------------------- | ------------------------------------------------------- |
+| blockNode    | `DMEData.Block<WidgetEntityType, Node>` | See blockNode type sample below                         |
+| styleClasses | `Record<string, string>`                | Style string generated                                  |
+| active       | `boolean`                               | Whether the block is active. Always false in view mode. |
+| path         | `number[]`                              | Block path under 'children', eg. [0,1,1]                |
 
 ### blockNode type:
 

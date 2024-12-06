@@ -164,3 +164,7 @@ registerWidgetStyleOption(
   "margin"
 );
 ```
+
+### Reference
+
+See [registerWidgetStyle reference](../reference/styles.md).

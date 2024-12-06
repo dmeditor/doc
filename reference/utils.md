@@ -1,4 +1,0 @@
-## Util functions
-
-
-### richTextJsonToHTML
