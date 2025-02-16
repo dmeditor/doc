@@ -40,6 +40,7 @@ const App = () => {
 - [Edit/view configuration](./tutorial/dmeditor-configuration.md)
 - [SSR prefetch](./tutorial/ssr.md)
 - [System integration, like image browsing, saving block](./tutorial/integration.md)
+- [Configure style settings](./tutorial/how-to-configure-style-settings.md)
 
 **Develop a widget**
 
@@ -62,14 +63,14 @@ const App = () => {
 
 #### Develop a widget
 
-| API                                                     | Comment                                                        |
-| ------------------------------------------------------- | -------------------------------------------------------------- |
-| [registerWidget](./reference/widget.md)                 | Register a widget                                              |
-| [WidgetRenderProps](./reference/widget-render-props.md) | Props to implement widget render                               |
-| [Hooks](./reference/hooks.md)                           | useEditorStore, useDevice                                      |
-| [Render block, block list](./reference/block-render.md) | BlockRender, BlockListRender                                   |
-| [Setting components](./reference/setting-components.md) | Setting component like input, checkbox, width, etc             |
-| [Utility components](./reference/utility.md)            | Utility component useful for creatint widget, eg. MiniRichText |
+| API                                                        | Comment                                                                                              |
+| ---------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| [registerWidget](./reference/widget.md)                    | Register a widget                                                                                    |
+| [WidgetRenderProps](./reference/widget-render-props.md)    | Props to implement widget render                                                                     |
+| [Hooks](./reference/hooks.md)                              | useEditorStore, useDevice                                                                            |
+| [Render block, block list](./reference/block-render.md)    | BlockRender, BlockListRender                                                                         |
+| [Setting components](./reference/setting-components.md)    | Setting component like input, checkbox, width, etc                                                   |
+| [Utility components and functions](./reference/utility.md) | Utility component useful for creating widget and converting data, eg. MiniRichText, iterateBlockList |
 
 ## Extra resources
 

@@ -64,61 +64,13 @@ In most cases `BlockRender` is good enough. If you want to render a list directl
 
 See [BlockRender & BlockListRender](../../reference/block-render) for detail.
 
-### Children configuration
+### Configure style settings
 
-Mixed widget can control's embeded children's settings and styles.
+You can make style related configuration based on context. The configuration includes:
 
-In definition of the mixed widget, you can set rules by impelmenting below
+- Available Style settings, eg. background color
+- Available pre-defined styles, eg. icon on button.
 
-```javascript
-embedConfig?: {
-        enabledSettings?: (
-          settings: Array<Setting>,
-          styles: { [key: string]: Array<string> },
-          context: EmbedChildContext,
-        ) => { settings: Array<Setting>; enabledStyles?: { [key: string]: Array<string> } };
+Eg. in hero-text you only want margin-top and padding for all elements under list.
 
-        hasOwnView?: (context: EmbedChildContext) => boolean;
-      };
-
-```
-
-Below example set only showing 'container' setting of image and list, and disable all styles dropdown of image and list. At same time, for all children under 'list', use it's own setting panel instead of embeded setting panel.
-
-```javascript
-embedConfig: {
-      enabledSettings: (settings, styles, context) => {
-        const settingResult = settings.filter((item) => {
-          if (item.category !== 'block') {
-            return true;
-          } else {
-            if (context.relativePath.length === 1) {
-              if (context.relativePath[0] === 0) {
-                //image
-                if (!item.styleTags) {
-                  return true;
-                }
-                return arrayHasCommonElement(item.styleTags, ['container']);
-              } else {
-                //list
-                return item.styleTags?.includes('container');
-              }
-            }
-            return true;
-          }
-        });
-        let enabledStyles: any = {};
-        //list elements
-        if (context.relativePath.length === 2) {
-          enabledStyles = undefined;
-        }
-        return { settings: settingResult, enabledStyles: enabledStyles };
-      },
-      hasOwnView: (context) => {
-        if (context.relativePath.length >= 2 && context.relativePath[0] === 1) {
-          return true;
-        }
-        return false;
-      },
-    },
-```
+See [Here](./how-to-configure-style-settings.md) for more.
