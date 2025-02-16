@@ -6,13 +6,12 @@ A mixed widget is widget containing other widget. Besides following [making a wi
 
 It's recommaned to put all children blocks under property 'children', eg. Here is data example for Hero Text, where there is image on left and list on right.
 
-⚠️ Note: It's important to keep order can disable deleting on the direct children(below are image and list), since this direct children strucutre is the 'schema' of mixed widget.
-
 ```javascript
 {
         type: 'hero-text',
         data: {},
-        children: [
+        children: {
+          hero:
           {
             id: nanoid(),
             type: 'image',
@@ -22,11 +21,11 @@ It's recommaned to put all children blocks under property 'children', eg. Here i
               settings: {},
             },
           },
+          list:
           {
             id: nanoid(),
             type: 'list',
             isEmbed: true,
-            allowedTypes: ['heading', 'text', 'button'],
             data: { settings: { general: { padding: 10 } } },
             children: [
               {
@@ -40,7 +39,7 @@ It's recommaned to put all children blocks under property 'children', eg. Here i
               },
             ],
           },
-        ],
+        },
       }
 ```
 
@@ -57,7 +56,7 @@ There are 2 components which can be used for rendering children:
 ```javascript
 <BlockRender mode={mode} data={} path={} />
 
-<BlockListRender mode={mode} blockData={} path={} allowedTypes={} />
+<BlockListRender mode={mode} blockData={} path={} />
 ```
 
 In most cases `BlockRender` is good enough. If you want to render a list directly(not using `list` widget), you can use `BlockListRender`. Eg. In Tabs/Accordion, a tab/accordion item can use `BlockListRender` to avoid unncessary `list` block as parent for content blocks in a tab.
@@ -68,7 +67,7 @@ See [BlockRender & BlockListRender](../../reference/block-render) for detail.
 
 You can make style related configuration based on context. The configuration includes:
 
-- Available Style settings, eg. background color
+- Available style settings, eg. background color
 - Available pre-defined styles, eg. icon on button.
 
 Eg. in hero-text you only want margin-top and padding for all elements under list.

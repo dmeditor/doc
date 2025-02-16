@@ -1,6 +1,6 @@
 # How to configure style settings
 
-Style setting can configure available settings on style and widget styles, based on context (root widget, level, self widget, root widget's style, etc). It gives flexibility for developer to `tune` DM Editor to fit project's need, more importantly don't give too much unneeded settings for editor.
+Developer can configure available settings and widget styles, based on context (root widget, level, self widget, root widget's style, etc). This gives flexibility for developer to `tune` DM Editor to fit project's need, more importantly doesn't give too much unneeded settings to editor.
 
 !!! note "This feature is avaiable after 0.2.3"
 
@@ -61,7 +61,11 @@ config:{
 }
 ```
 
-## Setting for root list
+## Sample scenarios
+
+Below are some scenarios.
+
+### Setting for root list
 
 ```javascript
 {
@@ -98,12 +102,6 @@ config:{
       rootType: 'hero-text',
       config: {
         settings: ['container-padding', 'container-margin-top', 'container-background-color'],
-      },
-    },
-    {
-      blockType: 'iframe',
-      config: {
-        settings: ['container-padding'],
       },
     },
 ```
