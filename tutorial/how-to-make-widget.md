@@ -116,13 +116,12 @@ const { updateSelectedBlock } = useEditorStore();
 
 ```javascript
 registerWidget(
-{definition:
 {
    type: 'sample',
    name: 'Sample widget',
    ...
   },
-  render:SampleWidget}
+  {render:SampleWidget}
 )
 ```
 
