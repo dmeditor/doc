@@ -4,7 +4,7 @@
 | ------------ | --------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
 | align        | Align left, center, right                                                   |                                                                                          |
 | button-group | Buttons as group                                                            | `{ options: Array<{ text: string, value: string }> };`                                   |
-| checkbox     | Checkbox                                                                    |                                                                                          |
+| checkbox     | Checkbox. value is true/false                                                                    |                                                                                          |
 | color        | Color                                                                       | `{colorGroup?:string, colors?:Array<{color:string, name?:string}>} `                     |
 | help-link    | Help link in the setting panel. Opens a URL in a new tab or a popup dialog. | See [help-link](#help-link)                                                              |
 | image        | Image with browse button                                                    |                                                                                          |
