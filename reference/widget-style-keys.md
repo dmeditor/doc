@@ -20,7 +20,15 @@ A style key is a named slot on a widget that a [widget style](./styles.md) can t
 }
 ```
 
-Most widgets also apply a fallback class `dme-w-{key}` on that element (for example `dme-w-tr`). Use that class in `cssStyle`. Carousel is an exception: several keys fall back to `dme-carousel-*` instead.
+Each style key always gets class `dme-w-{key}` on that element (for example `dme-w-tr`), **in addition to** any `cssClasses` you set. Use `.dme-w-{key}` in `cssStyle`. The block wrapper also has `dme-w-root`.
+
+In a custom widget, apply this with `getWidgetStyleClass`:
+
+```javascript
+import { getWidgetStyleClass } from 'dmeditor';
+
+<div className={getWidgetStyleClass(styleClasses, 'tr')}>{...}</div>
+```
 
 ### Common
 
@@ -206,4 +214,4 @@ Open items also get the built-in class `dme-w-open` (not a style key).
 | `active`   | Added on the selected tab button    |
 | `body`     | Tab panel content                   |
 
-The selected tab also gets the built-in class `dme-w-active` (not a style key).
+The selected tab also gets `dme-w-active` from the `active` key.

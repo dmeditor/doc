@@ -53,10 +53,10 @@ classes:{'root':'', tr: '', td: ''}
 {
 background: #cccccc;
 
-.dme-w-table-tr{
+.dme-w-tr{
 
 }
-.dme-w-table-td{
+.dme-w-td{
 }
 
 }

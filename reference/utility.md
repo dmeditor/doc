@@ -105,6 +105,30 @@ interface PickColorProps {
 
 ## Helper functions
 
+### getWidgetStyleClass
+
+Builds `className` for a widget style key: custom `cssClasses` plus the built-in `dme-w-{key}` class. Always include `dme-w-{key}` so `cssStyle` can target `.dme-w-{key}`.
+
+```typescript
+getWidgetStyleClass(
+  styleClasses: Record<string, string> | undefined,
+  key: string,
+  extra?: string,
+): string
+
+getWidgetStyleClasses(
+  styleClasses: Record<string, string> | undefined,
+  keys: string[],
+  extra?: string,
+): string
+```
+
+```javascript
+<div className={getWidgetStyleClass(styleClasses, 'image')}>
+  <img src={src} />
+</div>
+```
+
 ### iterateBlockList
 
 It iterates all block list (can be saved data) from top to down.
